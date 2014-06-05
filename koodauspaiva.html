@@ -12,21 +12,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./favicon.ico">
 
-  <title>Koodi2016 | ”Joka päivä mietin, että olisipa kiva, kun ymmärtäisi paremmin ohjelmointia” -Taru, LVM</title>
+  <title>Koodi2016 | Miksi ohjelmointi on tärkeää?</title>
 
   <link rel="stylesheet" href="bootstrap-base/css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/main-page.css" />
+  <script src="/path/to/waypoints-sticky.min.js"></script>
   
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=170757173010205&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  
+ 
 </head>
 <body>
 
@@ -40,13 +33,12 @@
         </div>
 
         <ul class="nav nav-pills col-sm-7 col-12">
- 				<li><a href="ohjelmointi.html">Miksi ohjelmointi on tärkeää?</a></li>
-                <li><a href="ops.html">Miten OPS muuttuu?</a></li>
-                <li><a href="opetus.html">Miten ohjelmointia opetetaan?</a></li>
-                <li><a href="haasteet.html">Haasteet</a></li>
-                <li><a class="active">Tarinat</a></li>
+          <li><a href="ohjelmointi.html">Miksi ohjelmointi on tärkeää?</a></li>
+          <li><a href="ops.html">Miten OPS muuttuu?</a></li>
+          <li><a href="opetus.html">Miten ohjelmointia opetetaan?</a></li>
+          <li><a href="haasteet.html">Haasteet</a></li>
+          <li><a href="tarinat.html">Tarinat</a></li>
         </ul>
-<div class="fb-share-button" data-href="http://koodi2016.fi" data-type="box_count"></div>
         <div class="nav-download col-sm-3 col-12">
           <button type="button" class="btn pdf-download" onclick="window.location.href='lataa.html'">» Lataa ilmainen opas</button>
           <span class="glyphicon glyphicon-search"></span>
@@ -60,9 +52,9 @@
     <div class="workpage-header-wrapper">
       <div class="container">
         <h2 class="page-header">
-          <small>Tukijoilta:</small>
+          <small>Osa 1:</small>
           <br />
-          Miksi tämä on tärkeää?
+          Miksi ohjelmointi on tärkeää?
         </h2>
       </div>
     </div>
@@ -74,14 +66,12 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-3">
-                 
-
-                    <img src="/img/portraits/taru.png">
-                  <h5>Taru Rastas, viestintäneuvos, Liikenne- ja viestintäministeriö</h5>
+                  
                   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://koodi2016.fi" data-hashtags="koodi2016">Tweet</a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                      <div class="fb-share-button" data-href="http://koodi2016.fi" data-type="box_count"></div>
+                  <div class="fb-share-button" data-href="http://koodi2016.fi" data-type="box_count"></div>
                   
+           
                   
                 </div>
                 <div class="col-sm-7"></div>
@@ -91,38 +81,29 @@
         </div>
 
         <div class="col-sm-7">
-          <h3 id="section-1" class="fixed-header-hash-fix">”Joka päivä mietin, että olisipa kiva, kun ymmärtäisi paremmin ohjelmointia”</h3><p>
-          ”Digitaalisuus tulee toimialasta riippumatta arkeen. Julkiset palvelut, yritysten liiketoimintaprosessit, sairaalat, kaupat... Maailma vain digitalisoituu, ja meidän pitää huolehtia siitä, että meillä on tekijöitä.
-          </p>
+     
+          <h3 id="section-1" class="fixed-header-hash-fix">Kokeile koodauspäivää koulussasi jo nyt!</h3>
+         
+           <p>
+           Haluatko päästä kokeilemaan ohjelmoinnin opettamista jo nyt? Hienoa, sillä ei ole mitään syytä odottaa syksyyn 2016 saakka. Vielä pitää kuitenkin malttaa 10.6 asti, jolloin tämä sivu aukeaa. 
+           </p>
 
-          <p>
-          Jotta voimme vastata tarpeeseen, meidän pitää tarttua asiaan kaikilla ikäasteilla. Lapset on saatava digitaaliseen maailmaan koulusta lähtien siten, että he kykenevät ottamaan tekijän roolin. 
-          </p>
+           <p>
+          Keräämme tänne valmiin ohjelman ja harjoitukset mahdollisiksi koodauspäiviksi 1–2-, 3–6- ja 7–9-luokille. A4-paperille helposti tulostettavien ohjeiden avulla voi järjestää koodauspäivän, vaikka ei olisi koskaan itse koodannut riviäkään.
+           </p>
 
-          <p>
-          Ja mihin ikinä se nuori haluaa tulevaisuudessa erikoistua – digitaalisuus tulee opinnoissa hyödyksi. Luonnontieteissä tai bisnesmaailmassa.
-          </p>
+           <p>
+           Päivien tavoitteena ei ole antaa kaiken kattavaa kuvaa ohjelmoinnista vaan kannustaa tutkimiseen ja oppimiseen. Saa kokeilla! 
+           </p>
+           </em>
 
-          <p>
-          Liikenne- ja viestintäministeriö kehittää digitaalista Suomea. Me luomme mahdollisuuksia sille, että kuluttajilla ja yrityksillä olisi käytössään paras mahdollinen tieto- ja viestintätekniikka, ja siitä löydettäisi uutta kasvua Suomelle.
-          </p>
+           <h2><a href="http://koodi2016.fi/koodauspaiva">» Koodi2016.fi/koodauspaiva<h/2>
+            <h3 id="section-2" class="fixed-header-hash-fix">Johdanto</h3>
+      
+         
 
-          <p>
-          Usein kuullaan, että Nokia on romahtanut, ja tän alan insinööreille ei ole kysyntää. Mutta kyse on siitä, että IT:tä hyödyntävät alat kehittyvät valtavasti, ja sitä osaamista pitää koko ajan kehittää.
-          </p>
-
-          <p>
-          Usein uuden oppiminen vaatii poisoppimista siitä, että kun on aina tehty yhdellä tavalla, niin miksi pitäisi alkaa nyt tehdä asioita uudella tavalla.
-          </p>
-
-          <p>
-          Sen auttamiseksi pitäisi saada läpi ajatus siitä, että ohjelmointi ei ole erityistaitoa jollekin tietylle pienelle porukalle. 
-          </p>
-
-          <p>
-          Joka päivä mietin itse, että olisipa kiva, kun ymmärtäisi paremmin jotain ohjelmointiin liittyvää. Ei ole tarkoitus, että jokaisesta meistä tulee hyvä koodari, mutta sen ymmärtäminen, että mihin kaikkeen sillä pystytään, ja millaisia asioita ratkotaan, ja miten se linkittyy erilaisiin toimintoihin – se on tärkeää.”
-          </p>
           <br>
+
         </div>
       </div>
     </div>
@@ -135,7 +116,7 @@
         <div class="row">
           <div class="col-sm-8">
             <h3>Oppaasta</h3>
-          <p>
+            <p>
             Koodi2016-hankkeen takana ovat ohjelmoinnin opetukseen perehtynyt lastenkirjailija <a href = http://www.twitter.com/lindaliukas>Linda Liukas</a> sekä vapaa toimittaja ja luovan alan yrittäjä <a href = http://www.juhanimykkanen.com>Juhani Mykkänen</a>. Hanketta tukevat <a href = http://www.lvm.fi>Liikenne- ja viestintäministeriö</a>, <a href = http://www.ohjelmistoyrittajat.fi>Ohjelmistoyrittäjät ry</a>, <a href = http://www.sitra.fi>Sitra</a>, <a href = http://www.tek.fi>Tekniikan akateemiset TEK</a>, <a href = http://www.teknologiateollisuus.fi>Teknologiateollisuus ry</a>, <a href = http://www.startup-saatio.fi>Startup-säätiö</a>, <a href = http://www.diacor.fi>Diacor</a>, <a href = http://www.eficode.fi>Eficode</a>, <a href = http://www.futurice.com>Futurice</a>, <a href = http://www.reaktor.fi>Reaktor</a>, <a href = http://www.rovio.com>Rovio</a> ja <a href = http://www.supercell.net>Supercell</a>. Oppaan sisältöä saa jakaa ja monistaa vapaasti, kunhan lähde ja osoite Koodi2016.fi mainitaan.
             </p>
           </div>
