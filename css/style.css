@@ -66,6 +66,8 @@ small {
   color: #333;
   padding-top: 0;
   padding-bottom: 0;
+  font-size:10pt;
+  font-weight:500;
 }
 
 #main-nav .nav-pills a.active {
