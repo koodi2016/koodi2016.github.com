@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html>
+<head lang="fi">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Koodi2016 | Miksi ohjelmointi on tärkeää?</title>
+
+  <link rel="stylesheet" href="bootstrap-base/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main-page.css" />
+  <script src="/path/to/waypoints-sticky.min.js"></script>
+  
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=170757173010205&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
+</head>
+<body>
+
+  <header id="main-nav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="header-logo col-sm-2 col-12">
+          <a href="/">
+            <img src="img/header-logo.png" />
+          </a>
+        </div>
+
+        <ul class="nav nav-pills col-sm-7 col-12">
+          <li><a class="active">Miksi ohjelmointi on tärkeää?</a></li>
+          <li><a href="ops.html">Miten OPS muuttuu?</a></li>
+          <li><a href="opetus.html">Miten ohjelmointia opetetaan?</a></li>
+          <li><a href="haasteet.html">Haasteet</a></li>
+          <li><a href="tarinat.html">Tarinat</a></li>
+        </ul>
+<div class="fb-share-button" data-href="http://koodi2016.fi" data-type="box_count"></div>
+        <div class="nav-download col-sm-3 col-12">
+          <button type="button" class="btn pdf-download">» Lataa ilmainen opas</button>
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="main-content">
+
+    <div class="workpage-header-wrapper">
+      <div class="container">
+        <h2 class="page-header">
+          <small>Osa 1:</small>
+          <br />
+          Miksi ohjelmointi on tärkeää?
+        </h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="workpage-index">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h5>Tässä osiossa:</h5>
+
+                  <ul>
+
+                    <li><a href="#section-1">Johdanto</a></li>
+                    <li><a href="#section-2">Mitä ohjelmointi on?</a></li>
+                    <li><a href="#section-3">Tietokulma: Hyvin lyhyt ohjelmointisanasto</a></li>
+                    <li><a href="#section-4">Millaisia asioita ohjelmoija luo?</a></li>
+                    <li><a href="#section-5">Kysymyksiä ja vastauksia ohjelmoinnista</a></li>
+                    <li><a href="#section-6">Esimerkkejä koodista</a></li>
+                  </ul>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://koodi2016.fi" data-hashtags="koodi2016">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  
+                  <div class="fb-like" data-href="http://koodi2016.fi" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+                  
+                </div>
+                <div class="col-sm-7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-7">
+      	<hr>
+      <p> <em>Luet Koodi2016:n verkkoversiota. Olemme halunneet tarjota oppaan koko sisällön selaimella ja älypuhelimilla luettavana tekstinä, josta on helppo halutessaan leikata ja liimata sisältöä muualle. Jos kaipaat visuaalisesti näyttävämpää esitystä – ja vaikket kaipaisikaan – kannattaa tutustua myös oppaan <a href = lataa.html>näköisversioon</a>! </em></p>
+      <hr>
+          <h3 id="section-1" class="fixed-header-hash-fix">Johdanto</h3>
+      
+          <p class="lead">Heidän nuoruutensa tulee olemaan aivan erilainen kuin sinun tai minun. Kuten myös heidän aikuisuutensa. Siis lasten, jotka aloittavat koulun syksyllä 2016.
+          He tulevat oppimaan 7-vuotiaasta alkaen, miten tietokoneen avulla rakennetaan asioita.
+          </p>
+
+          <p>
+          Miten koneelle annetaan ohjeita siitä, kuinka piirtää kokonainen maailma elokuvaan? Kuinka kone opetetaan selvittämään, mikä tauti mummoa vaivaa? 
+          </p>
+
+          <p>
+          Suomalaisten ihmisten, yritysten ja koko maan tulevaisuuteen vaikuttaa, innostuvatko nämä 2000-luvulla syntyneet ihmiset ohjelmoinnista. 
+          </p>
+
+          <p>
+          Saavatko he jo nuorena vihiä siitä, mitä kaikkea pelkällä näppäimistöllä voi rakentaa, parantaa ja luoda?
+          </p>
+
+          <p>
+          Kerrotaanko heille siitä kaikesta innostavasti? 
+          </p>
+
+          <p>
+          Opetusministeri <strong>Krista Kiuru</strong> linjasi tammikuussa 2014, että ohjelmointi tulee osaksi peruskoulun opetusohjelmaa. 
+          </p>
+          
+   
+
+          <p>
+          Muutos on tärkeä. Opetussuunnitelmaa muutetaan kerran noin 10 vuodessa. Seuraava muutos tapahtuu 2016, joten sitä seuraava kierros olisi jo auttamattoman myöhässä. Esimerkiksi Britanniassa ohjelmointia aletaan opettaa jo syksyllä 2014.
+          </p>
+
+          <p>
+          2016 suomalaiset koulut ottavat käyttöön Opetushallituksen johdolla muokatun opetussuunnitelman, joka määrittelee, mitä asioita nykynuorten tulee koulussa koodaamisesta oppia. 
+          </p>
+
+          <p>
+          Nyt lukemasi verkkosivusto (ja sen painettu opaskirjaversio) on syntynyt halusta vaikuttaa siihen, miten ohjelmointia lähestytään koulussa.
+          </p>
+
+          <p>
+          Mistä tässä oppaassa sitten on kyse?
+          </p>
+
+          <p>
+          Olemme halunneet tehdä tiiviin ja ymmärrettävän esityksen neljästä asiasta:
+          </p>
+
+          <ul>
+
+          <li>
+          Mitä ohjelmointi on ja miksi sen opettaminen on niin tärkeää?
+          </li>
+
+          <li>
+          Miten opetussuunnitelma muuttuu ja miksi?
+          </li>
+
+          <li>
+          Miten ohjelmointia voi opettaa peruskoulussa?
+          </li>
+
+          <li>
+          Mitä muut kuin koululaitos voivat tehdä?
+          </li>
+
+          </ul>
+
+          <p>
+          Ensimmäinen kohta – ja samalla oppaan ensimmäinen osio – liittyy siihen, että vaikka monella on jonkinlainen käsitys siitä mitä ohjelmointi on (”tietokoneella kirjoitetaan jotain, ja tuloksena syntyy ohjelmia tietokoneille ja älypuhelimille”), käsitys on hatara. Kynnys päästä aivan perusymmärryksestä pykälää pidemmälle on suuri – varsinkin, jos ei ole tiedossa, miksi asiasta pitäisi olla ylipäätään kiinnostunut.
+          </p>
+
+          <p>
+            <em class="block-emphasize">
+               Muutos on tärkeä. Opetussuunnitelmaa muutetaan kerran noin 10 vuodessa. Seuraava muutos tapahtuu 2016, joten sitä seuraava kierros olisi jo auttamattoman myöhässä.
+            </em>
+            </p>
+            
+          <p>
+          Haluamme siis tarjota lukijalle ikään kuin tiiviin lunttilapun: tästä on yleisesti ottaen kyse, esimerkiksi 
+          tältä ohjelmakoodi voi näyttää, tällaisia asioita ohjelmoimalla voi saada aikaan.
+          </p>
+
+          <p>
+          Toisessa osassa valotamme, miten opetussuunnitelma näillä näkymin muuttuu syksyllä 2016. 
+          Vastaamme myös opettajien pelkoihin ja kysymyksiin aiheesta.
+          </p>
+
+          <p>
+          Kolmannessa osassa tarjoamme konkreettisen apumme peruskoulussa käsillä olevaan muutokseen: Tällaisia asioita ohjelmoinnin opetuksessa kannattaa huomioida, tällaisia apuvälineitä voi käyttää. Tällaiset harjoitukset innostavat, täältä niitä löytää.
+          </p>
+
+          <p>
+          Neljännessä osassa esitämme haasteita päättäjille, koodareille, vanhemmille ja meille kaikille.
+          </p>
+
+          <p>
+          Olemme laatineet esityksemme pohjaten kymmeniin haastatteluihin opettajien ja opetuksen asiantuntijoiden sekä tietenkin ohjelmoijien ja ohjelmoinnin opetuksen tuntijoiden kanssa. Pohjaamme myös verkossa saatavilla oleviin tietolähteisiin ja projektin aikana lukemattomilta vapaaehtoisilta tulleisiin ideoihin. 
+          </p>
+
+          <p>
+          Ohjelmoinnin opettamiseen liittyy selvästi erilaisia epävarmuuksia. Siksi olemme pyrkineet olemaan mahdollisimman kouriintuntuvia.
+          </p>
+
+          <p>
+          Totuuden hetki koulussa on aina opettajan ja oppilaan välinen vuorovaikutus.
+          </p>
+
+          <p>
+          Oppilaan kannalta tavoitteenamme on, että hän saisi peruskoulussa – jo lapsena – mahdollisuuden innostua ohjelmoinnista.
+          </p>
+          
+          <p>
+            Tässä osiossa lähestytään ohjelmoinnin opettamista peruskoulussa kahden pääharjoituskategorian kautta. Nämä ovat yhtäältä leikit sekä toisaalta erilaiset verkossa tarjolla olevat ympäristöt ohjelmointia ja sen opiskelua varten.
+          </p>
+
+ 
+<hr>         
+
+       <h3 id="section-2" class="fixed-header-hash-fix">Mitä ohjelmointi on?</h3>
+         <p class="lead">
+         Jo kuusivuotias saattaa osata tehdä voileivän, mutta tietokoneelle se on vaikeaa. Minkä leivän valitsen? Milloin lopetan leikkaamisen? Mitä tapahtuu, jos juusto loppuu kesken?
+         </p>
+
+         <p>
+         Kun tietokone – tai leivän tekemisen tapauksessa vaikkapa tietokoneen ohjaama robotti – laitetaan leiväntekoon, pienkinkin yksityiskohta on selitettävä täydellisen tarkasti ja yksikäsitteisesti. Kaikkiin mahdollisesti eteen tuleviin pulmiin on varauduttava.
+         </p>
+
+         <p>
+         Mutta selittäminen kannattaa.
+         </p>
+
+         <p>
+         Kun tietokone lopulta osaa tehdä yhden leivän, se tekee sen täydellisesti. Joka kerta. Toisin kuin kuusivuotias tai edes aikuinen, yhden voileivän tehtyään tietokone voi tehdä tuhansia ja taas tuhansia leipiä. Se ei koskaan kyllästy. 
+         </p>
+
+         <p>
+         Tietokone on kärsivällinen ja tarkka, varma ja nopea. Siksi se on loistava työkumppani tekemään asioita ihmisen ohjeiden perusteella. 
+         </p>
+
+         <h4>
+         Ihminen käskee tietokonetta
+         </h4>
+
+         <p>
+         Tietokone ei tiedä itse mitään.
+         </p>
+
+         <p>
+         Tai tarkemmin sanoen se ei tiedä mitään, mitä ihminen ei ole sille opettanut (tai edistyneimpien tekoälyjen tapauksessa: mitä ihminen ei ole sitä opettanut oppimaan). Se ei myöskään tee mitään, mitä ihminen ei ole käskenyt sitä tekemään.
+         </p>
+
+         <p>
+         Se, että voimme pelata videopeliä, surffata netissä tai ajaa nykyaikaista autoa perustuu sille, että ohjelmoija on kertonut tietokoneelle tarkalleen, miten toimia.
+         </p>
+
+         <p>
+         Pelin tapauksessa ohjelmoija kertoo koneelle, millaisia hahmoja ruudulle piirretään, minkä näköisessä maailmassa ne liikkuvat, ja mitä hahmon pitää ruudulla tehdä, kun pelaaja painaa ohjaimesta nappia.
+         </p>
+
+         <p>
+         Netti puolestaan koostuu toisiinsa yhteydessä olevista tietokoneista. Ihmisen on pitänyt kertoa koneille, millaisten sääntöjen mukaisesti ne lähettävät toisilleen dataa, josta taas muodostuvat lopulta käyttäjän ruudulla näkyvät tekstit, kuvat ja videot.
+         </p>
+
+         <p>
+         Dataa ei saa hävittää matkalla, ja yksittäisen verkkosivun pitäisi toimia hyvin sekä matkapuhelimella että videotykillä katseltuna. Koneelle on annettava ohjeet eri tilanteisiin.
+         </p>
+
+         <p>
+         Kaupasta saa jo auton, joka osaa parkkeerata itsensä. Pian meillä on autoja, jotka ajavat kaupungissa itse itseään. Nämä molemmat asiat ovat mahdollisia, koska ihminen on pohtinut kaikkia mahdollisia tilanteita, joita autoa ajaessa voi tulla vastaan. Sitten hän on antanut koneelle ohjeet siitä, miten näissä tilanteissa toimitaan. 
+         </p>
+
+         <p>
+         Miten kaikki nämä asiat opetetaan tietokoneelle?
+         </p>
+
+         <p>
+         Sitä kutsutaan ohjelmoinniksi.
+         </p>
+
+         <h4>
+         Ohjelmointi on ohjeiden antamista tietokoneelle
+         </h4>
+
+         <p>
+         Ohjelmointia voisi verrata siihen, että ruoanlaiton osaava kokki kirjoittaa reseptin aloittelevalle leipurille.
+         </p>
+
+         <p>
+         Ohjeiden on oltava niin täsmällisiä, että niitä ei voi mitenkään ymmärtää väärin, jos niitä seuraa täydellisen tarkasti. Ohjeiden on oltava tarpeen mukaan muutettavia. Niiden on katettava kaikki mahdolliset tilanteet ja kysymykset, jotka uudelle leipurille saattavat tulla mieleen. Ohjeiden on myös oltava juuri oikeassa järjestyksessä.
+         </p>
+
+         <p>
+         Ohjelmointikieliä on satoja, mutta niiden kaikkien perusajatus on, että ohjelma saa tietoja – esimerkiksi ihmiseltä –, käsittelee tiedot annettujen sääntöjen mukaan ja saa aikaan halutun lopputuloksen.
+         </p>
+
+         <p>
+         Kaikkein teknisimmällä tasolla ajateltuna tietokoneessa on muistipaikkoja, joihin voi tallentaa ykkösiä ja nollia. Lyhyiden tai hyvin, hyvin pitkien ykkösten ja nollien jonojen avulla voidaan kuvata esimerkiksi kirjaimia, koneelle annettavia komentoja tai vaikkapa kokonaisia valokuvia.
+         </p>
+
+         <p>
+         Kaikki asiat joiden parissa tietokone työskentelee – Googlelle annetut hakusanat, uuden ihmisen kirjaaminen Facebook-kavereiden listaan sekä herätyskellon soiminen – kääntyvät lopulta jonoihin ykkösiä ja nollia, jotka tietokone käsittelee.
+         </p>
+
+         <p>
+         Ohjelmoija ei kuitenkaan kirjoita ykkösiä ja nollia. Hän naputtelee hitusen normaaliin puhekieleen verrattavissa olevia komentoja, jotka kone ymmärtää, koska ne on merkitty tarkalleen yhteisesti sovitulla tavalla.
+         </p>
+
+         <p>
+         Osa kielistä on nopeakäyttöisiä, osa on mahdollisimman luotettavia. Osaa voi lukea kuin englantia.
+         </p>
+
+         <p>
+         Kielet ovat kehittyneet kuin talonrakennustarvikkeet: jos joskus on pitänyt aloittaa valamalla omat 
+         tiilensä, nyt taloja rakennetaan valmiista elementeistä. Nykyohjelmoijat rakentavat vankkojen perustusten 
+         päälle, niin paljon helppokäyttöisemmiksi ja enemmän valmiita palikoita sisältäväksi esimerkiksi työelämässä käytettävät ohjelmointikielet ovat kehittyneet muutamassa vuosikymmenessä.
+         </p>
+         
+         <p>
+                   <em class="block-emphasize">Kuten missä tahansa kielessä, myös ohjelmointikielissä on omat sanastonsa ja kielioppinsa.</em>
+         </p>
+
+         <p>
+         Kuten missä tahansa kielissä, myös ohjelmointikielissä on oma sanastonsa ja kielioppinsa. Koodi muodostuu kullekin ohjelmointikielelle kuuluvista ilmaisuista (tätä kutsutaan <em>syntaksiksi</em>), sekä sanoista ja kuvauksista, jotka ohjelmoija luo omiin tarpeisiinsa kielen sääntöjen puitteissa.
+         </p>
+
+         <p>
+         Koodia luetaan rivi riviltä, mutta rivien joukot muodostavat kokonaisuuksia, jotka edustavat jotain tiettyä tehtävää. Yhdellä rivillä saatetaan esimerkiksi tallentaa muuttujaan tietty lukuarvo, mutta yhdistettynä tuo rivi ja sen yllä ja alla olevat rivit voivat yhdessä muodostaa kokonaisuuden, jossa esimerkiksi pankin tietokanta saa tietää, että ihmisen pankkitilille talletetaan rahaa. Tällöin esimerkiksi muuttujaan ”saldo” tallennetaan lukuarvo siitä, paljonko tilillä on talletuksen jälkeen rahaa.
+         </p>
+
+         <p>
+         Jos kuulostaa monimutkaiselta, ei huolta. Tästä kaikesta on tuonnempana esimerkkejä!
+         </p>
+
+         <p>
+         Hyvällä ohjelmoijalla on rikas sanavarasto eli käsitys ohjelmointikielen tarjoamista työkaluista. Eikä haittaa, vaikka osaisi useampaa kieltä. Teknologia ja kielet myös kehittyvät koko ajan. Siksi ohjelmoija saa käyttöönsä vuosi vuodelta tehokkaampia työkaluja pulmiensa ratkaisuun.
+         </p>
+
+         <p>
+         Nykyaikainen ohjelmointi on luovaa ongelmanratkaisua. Ohjelmoijan tehtävä on ratkaista ongelma, esimerkiksi rahan siirto pankin tietojärjestelmässä tilillä toiselle. Tätä varten ohjelmoija muuttaa ongelman pala palalta muotoon, jonka tietokone ymmärtää.
+         </p>
+
+         <p>
+         Usein ohjelmoijan tehtävänä on kirjoittaa ohjelma, joka ottaa vastaan tietoa, käsittelee sitä ja tulostaa ulos uutta tietoa.
+         </p>
+
+         <p>
+         Esimerkiksi uuden kirjan lisääminen ostoskoriin Amazonin verkkokirjakaupassa saa aikaan Amazonin tietokoneilla uusia pieniä komentoja. Niistä yksi muuttaa asiakkaan ostoskorin sisältämien kirjojen lukemaa, toinen muokkaa verkkokaupassa jäljellä olevien kirjojen määrää ja kolmas päivittää listaa kirjoista, joita asiakkaalle jatkossa suositellaan.
+         </p>
+
+<hr>
+
+   <h3 id="section-3" class="fixed-header-hash-fix"> Tietokulma: Hyvin lyhyt ohjelmointisanasto</h3>
+        
+         <p class="lead">Tuntuvatko ohjelmoinnin käsitteet solmuisilta? Tässä esimerkkejä siitä, mitä ne käytännössä tarkoittavat.
+         </p>
+
+         <p>
+         <h4>Tietokone.</h4> Tietokoneen tehtävä on yksinkertaistettuna ottaa vastaan tietoa, suorittaa ohjelma, joka käsittelee tietoa ihmisen kannalta aiempaa hyödyllisempään muotoon ja näyttää lopputulos. Ohjelmoijan tehtävänä on varmistaa, että tietokone saa tiedon muodossa, jonka se ymmärtää, kirjoittaa ohjelma jonka tietokone ymmärtää – ja ihailla lopputulosta.
+         </p>
+
+         <p>
+         <h4>Muuttuja.</h4> Muuttuja on ohjelmakoodissa nimetty paikka, jonka sisälle voi tallentaa erilaista tietoa. Tieto voi olla esimerkiksi numero, pätkä tekstiä tai tieto siitä, onko jokin väite totta tai ei.
+         </p>
+
+         <p>
+         Ajatellaan vaikkapa tilannetta, jossa asiakas tulee pankkivirkailijan luo ja antaa tilinumeronsa:
+         </p>
+
+         <p>
+         Virkailijan syöttämä tilinumero kulkeutuu pankin tietokantaan, jossa ohjelmisto tarkistaa, löytyykö tietyllä tilinumerolla tietokannasta tili. Tällöin tietty muuttuja saa arvon ”totta” viitaten siihen, että kyseinen tili todella on juuri tässä pankissa.
+         </p>
+
+         <p>
+         Seuraavaksi toiseen muuttujaan voidaan tallentaa esimerkiksi tieto siitä, paljonko tilillä on rahaa ja välittää muuttujan mukana tieto pankkivirkailijan näytölle. Virkailija voi tällöin kertoa saldon tilinumeron antaneelle asiakkaalle.
+         </p>
+
+         <p>
+         <h4>Algoritmi.</h4> Algoritmi on kuvaus jonkin tehtävän suorittamiseksi tarvittavista toimenpiteistä. Esimerkiksi tavallinen voileivän tekeminen voidaan esittää algoritmina, joka alkaa leivän ottamisesta pussista ja päättyy voin laittamiseen takaisin jääkaappiin. Ohjelmoinnin perusopinnoissa algoritmit liittyvät usein esimerkiksi asioiden lajitteluun ja luokitteluun. 
+         </p>
+
+         <p>
+         <h4>Funktiot.</h4> Funktiot ovat ohjelman sisäisiä pieniä itsenäisiä osasia. Funktion tarkoitus on, että konetta opetetaan kerran tekemään jokin asia, ja kun kone on sen oppinut, asian tekemiselle annetaan nimi. Esimerkiksi näytölle voitaisiin piirtää yksinkertainen talo komennolla ”piirräTalo”.
+         </p>
+
+         <p>
+         Kun sama asia pitää tehdä uudestaan, konetta riittää kutsua ”piirräTalo”-komennolla. Talo piirtyy silloin uudestaan, kuten aiemmin on opetettu.
+         </p>
+
+         <p>
+         Yhdessä funktiossa voi olla monta algoritmia, ja yhtä funktiota voi käyttää uudelleen ja uudelleen eri paikoissa ohjelmakoodia.
+         </p>
+
+         <p>
+         Ohjelmoinnissa ei ole järkeä, jos saman asian pystyy tekemään nopeammin itse. Yksinkertaisen talon piirtäminen kerran on kätevää käsin. Mutta jos tarkoitus on piirtää sata taloa esittämään vaikkapa tietokoneella tehdyssä piirroselokuvassa kaupunkia, on helpompaa pyytää piirraTalo-funktiota piirtämään sata taloa. Hieman funktiota kehittelemällä se osaa jopa piirtää eri kokoisia ja eri värisiä taloja eri paikkoihin.
+         </p>
+
+         <p>
+         <h4>Lista.</h4> Ohjelmointikielissä on paljon erilaisia tapoja säilyttää tietoa ja järjestellä sitä. Listat ovat eräänlaisia lokerikkoja, joista voi poimia muuttujia helposti, laskea kuinka monta muuttujaa yhteensä on ja käsitellä tietoa kokonaisuutena. Voileivän muodostavat ainekset voivat alhaalta ylös olla järjestyksessä leipä, voi, makkara ja juusto. Kun ne laitetaan listaan, lista tietää, että yhteensä ainesosia on neljä, ja kolmas niistä on makkara.
+         </p>
+
+         <p>
+         <h4>Toistorakenne ja ehtolause.</h4> Tietokoneet tekevät päätöksiä ehdollisten rakenteiden avulla. Ehtolauseiksi kutsutaan rakenteita, joissa tietokoneita opetetaan tekemään päätöksiä. Jos makkara on loppu, laita leivän päälle vain juustoa. Jos juustokin on loppu, anna ilmoitus, että leivän täytteet ovat lopussa.
+         </p>
+
+         <p>
+         Toistorakenteiksi tai silmukoiksi kutsutaan taas sitä, että tietokone toistaa jotakin asiaa, kunnes toinen asia tapahtuu. Esimerkiksi: laita kunkin leivän päälle siivu makkaraa, kunnes makkara loppuu.
+         </p>
+         <hr>
+
+
+         <h3 id="section-4" class="fixed-header-hash-fix">Millaisia asioita ohjelmoija luo?</h3>
+
+
+         <p class="lead">
+         Seuraavassa on esitelty monipuolinen mutta satunnainen valikoima oikeaa elämää sivuavia, yksinkertaistettuja esimerkkejä siitä, millaisissa yhteyksissä tarvitaan ohjelmointitaitoja – aina Harry Potter -elokuvien tekemisestä itsensä parkkeeraavaan autoon ja jätteitä lajittelevaan robottijärjestelmään.
+         </p>
+
+         <h4>
+         WhatsApp-viestiohjelma
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> Luo älypuhelimelle sovellus, jonka avulla ihmiset voivat lähettää toisilleen 
+         perinteisten tekstiviestien tapaisia viestejä, mutta internetin välityksellä. 
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija pohtii esimerkiksi, miten viestit saadaan kulkemaan puhelimesta toiseen käyttäen puhelinverkon sijaan nettiyhteyttä. Ohjelmoijan haaste on ohjeistaa tietokonetta siten, että viestit kulkevat mahdollisimman nopeasti, ja sovelluksen toiminta ei hidastu, vaikka sitä käyttäisivät kymmenet miljoonat ihmiset yhtä aikaa.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> WhatsAppin kaltaisessa sovelluksessa äärimmäisen tärkeää on, että sovellusta on helppo ja miellyttävää käyttää. Siksi Whats-Appin tapauksessa käyttöliittymän suunnittelijalla on valtava rooli: sovelluksen pitää näyttää ymmärrettävältä ja intuitiiviselta välittömästi.
+         </p>
+
+         <h4>
+         Itsensä parkkeeraava auto
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> Suunnittele autoa ohjaava ohjelmisto, joka osaa osaa taskuparkkeerata auton itsestään.
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija saa tietoja auton etu- ja takaosissa olevilta sensoreilta. Ne kertovat esimerkiksi, kuinka kaukana auto on milläkin hetkellä katukivetyksestä, muista autoista tai ohi kulkevista ihmisistä. Parkkeerattava auto ei saa törmätä mihinkään näistä.
+         </p>
+
+         <p>
+         Ohjelmoija opettaa auton sisällä olevalle tietokoneelle sääntöjä: kun olet näin kaukana katukivetyksestä, käännä renkaita tämän verran ja paina kaasua tämän verran. Kun olet näin ja näin lähellä estettä, pysähdy heti, jotta et törmää.
+         </p>
+
+         <p>
+         Kun ohjelmoija on pohtinut kaikki mahdolliset tilanteet ja asennot joissa auto voi olla, hän antaa tietokoneelle toimintaohjeet eri tilanteisiin. Tämän jälkeen tietokone osaa automaattisesti parkkeerata auton juuri oikein ja tarkasti yhä uudestaan.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> Itsensä parkkeeravan auton kehittäminen vaatii rutkasti tuotekehitystä, yrityksiä ja erehdyksiä. Kaikkia eri tilanteita on lähes mahdoton kuvitella ennen kuin autoa on testattu erilaisissa arkielämän tilanteissa yhä uudestaan. Vasta vuosien testien jälkeen auto on valmis kauppoihin.
+         </p>
+
+
+         <h4>
+         Harry Potter -elokuvat
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> Harry Potter -elokuvissa pelataan Huispausta. Huispaus on peli, jossa Tylypahkan oppilaat jahtaavat lentävillä luudilla Sieppi-nimistä lentävää esinettä. Suuri osa kohtauksista on animoitava tietokoneella, koska Sieppiä tai lentäviä luutia ei ole oikeassa elämässä. Suunnittele ohjelma, jonka avulla voidaan piirtää Siepille erilaisia lentoratoja.
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija lukee ensin Harry Potter -kirjat ymmärtääkseen, miten Sieppi lentää. Hän oppii, että Sieppi pysähtyy välillä leijumaan paikoilleen ja singahtaa sitten johonkin satunnaiseen suuntaan. 
+         </p>
+
+         <p>
+         Ohjelmoija opiskelee tai palauttaa mieleensä hiukan matematiikkaa ja fysiikkaa. Niiden pohjalta hän muodostaa esimerkiksi kiihtyvyyden, painovoiman ja nosteen kaavojen tapaisia yhtälöitä. Niitä tarvitaan, jotta tietokonekin ymmärtää, miten Siepin liikeradat pitää mallintaa, jotta ne näyttävät ihmisen silmään luonnollisilta.
+         </p>
+
+         <p>
+         Ohjelmoija kokeilee, millaiset kaavat saavat yksinkertaisen palluran liikkumaan ruudulla, kuten hän haluaisi Siepin liikkuvan elokuvassa. Kun ohjelmoija on tyytyväinen, hän luovuttaa ohjelman animointiosaston ihmisille. He animoivat varsinaiseen elokuvaan yksinkertaisen palluran tilalle oikean Siepin näköisen esineen.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> Tosielämässä elokuvien erikoistehosteita suunnitellaan ohjelmilla, jotka tuntevat valmiiksi valtavan määrän fysikaalisia liikkeitä. Tämän vuoksi Harry Potterin kohdalla ei ole luultavasti tarvinnut lähteä enää alusta, vaan ohjelmoija on selvinnyt jalostamalla olemassaolevaa ohjelmakoodia.
+         </p>
+
+         <h4>
+         Sairaalan potilastietojärjestelmä
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> Luo järjestelmä, johon sairaala tallentaa jokaisen uuden potilaan tiedot, ja josta lääkärit voivat tutkia potilaan historiaa.
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija ottaa selvää, mitä tietoja potilaasta pitää tallentaa. Esimerkiksi nimi, osoite, ikä, sukupuoli, pituus, paino, aiemmat sairaudet, aiemmat sairaalakäynnit, rokotukset, leikkaukset, lääkitykset ja niin edelleen.
+         </p>
+
+         <p>
+         Ohjelmoija käskee tietokonetta muodostamaan tältä pohjalta tietokannan, johon hän varaa tilaa kaikille tarvittaville tiedoille ja kymmenilletuhansille potilaille. Ohjelmoija työskentelee yhdessä käyttöliittymäsuunnittelijan kanssa luodakseen sairaalan henkilökunnan tietokoneille näkymän, jonka avulla tietoja on helppo syöttää järjestelmään ja toisaalta saada sieltä tarvittaessa ulos.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> Terveydenhuollon tietojärjestelmät ovat monimutkaisia hankkeita, koska vanhat ja uudet järjestelmät joutuvat usein olemaan yhteyksissä toisiinsa. Tämä luo haasteita ohjelmointiprojekteihin, sillä vanhat järjestelmät on saatettu ohjelmoida tavoilla ja kielillä, joilla ei ole paljonkaan yhteistä nykyaikaisten tekniikoiden kanssa.
+         </p>
+
+         <h4>
+         Angry Birds -mobiilipeli
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> <em>Angry Birds</em>  -pelissä yritetään ampua ritsalla lintuja siten, että ne osuvat vihreisiin possuihin. Possut ovat linnoittautuneet puusta, kivistä tai vaikkapa jäästä tehtyihin linnakkeisiin. Ohjelmoi peli siten, että kun lintu osuu possun linnakkeeseen, linnake hajoaa tavalla, jolla sen voisi kuvitella hajoavan oikeassa elämässä.
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija selvittää pelin luovalta tiimiltä, millaisia linnakkeita pelissä tarvitaan. Puu on heikompaa kuin jää, ja jää on heikompaa kuin kivi. Kaikki materiaalit hajoavat siis eri tavalla, kun lintu osuu niihin. Ohjelmoija saa peliä pyörittävältä niin kutsutulta pelimoottorilta jo valmiiksi pelin sisäistä dataa siitä, missä kulmassa ja millä nopeudella lintu tulee linnaketta kohti.
+         </p>
+
+         <p>
+         Hänen tehtävänään on opettaa tietokoneelle, miten linnakkeen pitää sortua, kun lintu osuu sen eri kohtiin. 
+         Ohjelmoija opettaa tietokoneelle luonnonlakeihin liittyviä matemaattisia kaavoja: painovoiman, kitkan, liikemäärän ja niin edelleen. Kun ne on opetettu tietokoneelle oikein, linnakkeet alkavat sortua kuten ne sortuisivat oikeassa elämässä.
+         </p>
+
+         <p>
+         Tämän jälkeen ohjelmoija voi tehdä muutoksia esimerkiksi siten, että kivi ei olekaan ihan yhtä kestävää kuin oikeassa elämässä, tai että sininen lintu särkee jäätä tehokkaammin kuin punainen lintu.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> Esimerkki on kirjoittajien kuvittelema. Pelien kehittelyssä paukut käytetään usein aluksi siihen, että luodaan niin sanottu työkalukokoelma, jonka avulla pelin kehittäminen ja testaaminen on helpompaa.
+         </p>
+
+         <p>
+         Esimerkiksi <em>Angry Birdsin</em> tapauksessa voidaan aluksi aloittaa ohjelmoimalla työkalu, jolla pelin kehittäjä voi rakentaa ruudulle erilaisia linnakkeita yksinkertaisesti raahaamalla näytöllä puu- ja kivipalikoita erilaisiksi kasoiksi. Kun tuo työkalu on valmis, yhä uusien pelin maailmojen ja tasojen luominen on helppoa, sillä pohjatyö on tehty kunnolla. 
+         </p>
+
+         <p>
+         Asiaa voisi verrata siihen, että puita sahaava firma kehittää moottorisahan: tavallisella sahalla pääsee nopeammin alkuun, mutta kun moottorisaha on lopulta saatu kehitettyä, sillä tekeminen on paljon tehokkaampaa. Se ottaa äkkiä tavallisella sahalla saadun etumatkan kiinni ja menee pian heittämällä ohi.
+         </p>
+<img src="img/angrybirds.jpg" width="550"><p>
+         <small>Angry Birds -pelissä pommitetaan linnuilla vihreiden possujen linnakkeita. Kuva: Rovio.</small></p>
+
+         <h4>
+         Jätteitä lajitteleva robotti
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> Käytössämme on robottikoura (ks. oikean palstan kuva), joka osaa tarttua liukuhihnalla kulkeviin asioihin. Lisäksi meillä on digitaalinen videokamera, joka kuvaa liukuhihnaa. Liukuhihnalla kulkee sekaisin kiviä sekä roskia. Opeta robottikouraa poimimaan hihnalta kivet roskien seasta.
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija laittaa videokameran ottamaan tuhansia kuvia liukuhihnalla kulkevasta materiaalista. Ohjelmoija näyttää kuvia tietokoneelle ja kertoo sille, missä kohden kuvissa on kivi.
+         </p>
+
+         <p>
+         Ohjelmoija käskee konetta tallentamaan muistiin kaikki kuvat ja tiedon siitä, missä kohden niissä näkyy kivi. Kun tätä on jatkettu jonkin aikaa, kone alkaa itsenäisesti hahmottaa, millaiset asiat kuvassa ovat luultavasti kiviä.
+         </p>
+
+         <p>
+         Seuraavaksi ohjelmoija antaa koneen yrittää kivien tunnistamista itse. Hän näyttää koneelle kuvia, ja kone yrittää arvata, missä kohden kivi on.
+         </p>
+
+         <p>
+         Kun kone onnistuu, ohjelmoija kertoo sille, että kone oli oikeassa. Kun kone epäonnistuu, ohjelmoija kertoo, ettei kohdassa ollut kiveä.
+         </p>
+
+         <p>
+         Näin tietokone oppii yhä lisää, ja ohjelmoija säästää kivien osoittamiseen kulunutta omaa aikaansa.
+         </p>
+
+         <p>
+         Kun tätä on jatkettu tarpeeksi kauan, kone alkaa tunnistaa kiven esimerkiksi 9 kertaa 10:stä. Tässä vaiheessa prosentti saattaa – käyttötarkoituksesta riippuen – olla jo riittävän hyvä siihen, että koneen voi laittaa ohjaamaan robottikouraa, jonka tehtävä on poimia kiviä.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> Suomalainen ZenRobotics-yritys valmistaa jätteenlajittelujärjestelmää, jonka yhtenä osana on yllä kuvaillun kaltainen robottikoura. Kouran ja sitä ohjaavan tietokoneen tarkoitus on lajitella erilaisia käyttökelpoisia asioita talteen rakennusjätteen seasta.
+         </p>
+
+         <p>
+         Yllä kuvattu työ on tarkemmin sanottuna tekoälyn kehittämistä, jossa yhtenä osa-alueena tarvitaan ohjelmointitaitoa.
+         </p>
+         <img src="img/zen.jpg" width="550"><p>
+         <small>Suomalaisen ZenRobotics-yrityksen tekoälyllä toimiva jätteidenlajittelujärjestelmä. Kuva: ZenRobotics.</small>
+
+         <h4>
+         Musiikkitaideteos Kiasmaan
+         </h4>
+
+         <p>
+         <strong><em>Ohjelmoijan tehtävänanto:</em></strong> Luo Kiasmaan taideteos, joka soittaa tyhjässä valkoisessa huoneessa erilaista äänimaisemaa sen perusteella, kuinka monta ihmistä huoneessa on.
+         </p>
+
+         <p>
+         <strong><em>Mitä ohjelmoija tekee:</em></strong> Ohjelmoija tai hänen apurinsa asentaa huoneen kattoon nettikameran ja kytkee sen tietokoneeseen. Tietokoneen hän kytkee myös kaiuttimiin. Ohjelmoija haluaa, että huoneessa olevat ihmiset vaikuttavat siellä kuuluviin ääniin – toisin sanoen äänten pitää olla erilaisia riippuen siitä, millaista kuvaa verkkokamera välittää huoneesta.
+         </p>
+
+         <p>
+         Ohjelmoija avaa valmiin musiikinteko-ohjelman, jonka avulla voi soittaa tietokoneversioita erilaisista instrumenteista. Seuraavaksi ohjelmoija kirjoittaa koodia, joka yhdistää verkkokamerasta tulevan kuvan musiikkiohjelmaan. Kun kuvassa näkyy pelkkää valkoista, kuvassa ei selvästikään ole ketään. Tällöin huoneessa voi soida esimerkiksi pelkkä tasainen pianon pimputus, joka tulee ohjelmistosta.
+         </p>
+
+         <p>
+         Kun joku kävelee kuvaan, ohjelmoija voi opettaa tietokoneelle esimerkiksi, että vasemmassa laidassa näkyvä liike käynnistää musiikkiohjelmasta viidakkorumpuääniä. Jokainen oikeassa laidassa näkyvä liikahdus puolestaan soittaa jonkin sävelen viulun ääntä.
+         </p>
+
+         <p>
+         Kun ihmisiä nyt tulee kuvaan oikeasta laidasta, huoneessa alkaa soida rumpukomppi, jonka päälle jokainen liike kuvan vasemmassa laidassa alkaa säestää pianoa viulun avulla. Taideteos on valmis.
+         </p>
+
+         <p>
+         <strong><em>Huomioitavaa:</em></strong> Uudenaikaisilla pelikonsoleilla toimivat, pelaajan liikkeen tunnistavat urheilu- ja tanssipelit perustuvat pohjimmiltaan samankaltaiseen ajatteluun kuin yllä on esitetty: digitaalinen kamera välittää liikkeen tietokoneelle, joka analysoi, mitä sen edessä tapahtuu.
+         </p>
+
+<hr>
+
+         <h3 id="section-5" class="fixed-header-hash-fix">Kysymyksiä ja vastauksia ohjelmoinnista</h3>
+
+
+         <h4>Onko ohjelmointi vaikeaa?</h4>
+
+         <p>
+         Ohjelmointi on ohjeiden antamista tietokoneelle – ja sen pohtimista, miten ohjeet kannattaa antaa. Kun kysytään, onko ohjelmointi vaikeaa, on kysymys hiukan samanlainen kuin se, onko kirjoittaminen vaikeaa.
+         </p>
+
+         <p>
+         Lapsikin oppii kirjoittamaan yksinkertaisia asioita. Toisaalta tullakseen kirjallisuuden Nobel-voittajaksi tulee tuntea laaja valikoima käytössä olevia kirjoittajan työkaluja ja niiden parhaita käyttötapoja. On osattava peilata omaa tekemistä olemassa olevaan ja toisaalta oltava tarpeeksi luova tehdäkseen omia oivalluksia.
+         </p>
+
+         <p>
+         Siis: Ohjelmointi ei välttämättä ole vaikeaa, mutta se tarjoaa loputtomasti haasteita. Ohjelmoinnissa ei ole koskaan mielestään täysin oppinut samalla tavalla kuin kirjailija ei ole koskaan mielestään täydellinen kirjoittaja.
+         </p>
+
+         <h4>Mitä ohjelmoija tekee työkseen?</h4>
+
+         <p>
+         Ohjelmoijia ja ohjelmointiin liittyviä työtehtäviä on hyvin erilaisia. Jotkut ohjelmoijat keskittyvät kirjoittamaan ohjelmakoodia ja miettimään, miten tietty sovellus tai ohjelmisto tai sen osa kannattaa järkevimmin toteuttaa. Toisena päivänä sama ihminen voi keskittyä testaamaan toisen tekemää ohjelmaa tai etsimään kirjoitetusta koodista ajatus- tai muita virheitä.
+         </p>
+
+         <p>
+         Joskus ohjelmoija keskittyy pohtimaan projektin pohjapiirrustusta: mikä on paras yhdistelmä erilaisia palikoita, jotka yhdessä muodostavat sujuvasti, nopeasti ja virheettä toimivan ohjelmiston.
+         </p>
+
+        <em class="block-emphasize">Ohjelmointi on toisaalta ongelmanratkaisua, toisaalta taidetta</em>
+
+         <p>
+         Ohjelmointiin kuuluu myös paljon yhteistyötä: yhdessä pohtimista ennen koodauksen aloittamista, sen aikana sekä ohjelmiston testausvaiheessa.
+         </p>
+
+         <p>
+         Kun ohjelmoijan asiantuntijuus kasvaa, hänestä voi tulla esimerkiksi muista ohjelmoijista koostuvan tiimin vetäjä. Tällöin päätehtävä on auttaa muita suoriutumaan parhaansa mukaan, kysyä kriittisiä kysymyksiä ja tarjota pohdinta-apua pulmatilanteisiin.
+         </p>
+
+         <h4>Kuka päättää, miltä valmis ohjelma näyttää käyttäjälle?</h4>
+
+         <p>
+         Tyypillinen tietokoneohjelma, esimerkiksi älypuhelimella käytettävä sovellus, jakaantuu eri osiin. Yksi ”osa” sovellusta on se, miltä se näyttää älypuhelimen ruudulla sitä käyttävälle ihmiselle. Tuota osaa kutsutaan käyttöliittymäksi.
+         </p>
+
+         <p>
+         Käyttöliittymällä tarkoitetaan esimerkiksi älypuhelimen Facebook-sovelluksessa kaikkea sitä, minkä käyttäjä näkee ja mitä hän voi sormillaan koskea tehdäkseen Facebookissa asioita.
+         </p>
+
+         <p>
+         Käyttöliittymän suunnittelu on yhden tai useamman käyttöliittymäsuunnittelijan tehtävä.
+         </p>
+
+         <p>
+         Käyttöliittymän suunnittelijan vastuulla on paitsi se, miltä valmis ohjelmisto näyttää käyttäjälle, myös se, kuinka nopeaa ohjelmiston käyttö on oppia ja kuinka tehokasta ja tarkoituksenmukaista käyttö on pidemmällä aikavälillä.
+         </p>
+
+         <p>
+         Käyttöliittymäsuunnittelija ei välttämättä ohjelmoi. Hänen tehtävänsä saattaa olla esimerkiksi puhua ohjelmiston tulevien käyttäjien kanssa ja piirtää – joko käsin tai tietokoneella – keskustelujen pohjalta ehdotuksia mahdollisiksi käyttöliittymämalleiksi.
+         </p>
+
+         <h4>Mikä tekee hyvän ohjelmoijan?</h4>
+
+         <p>
+         Hyviä ohjelmoijia on hyvin erilaisia. Kuitenkin ainakin seuraavat piirteet voidaan useimpien mielestä liittää hyvään ohjelmoijaan:
+         </p>
+
+         <p>
+         <em>Halu ja kyky oppia uutta.</em> Ohjelmointi on toisaalta käsityötä, toisaalta taidetta ja toisaalta ongelmanratkaisua. Kuten kaikissa noissa osa-alueissa, myös ohjelmoinnissa tulee sitä paremmaksi, mitä enemmän sitä tekee. Ihminen oppii esimerkiksi näkemään erilaisia tapoja ohjeistaa tietokonetta yhä tarkemmin, lyhyemmin ja elegantimmin.
+         </p>
+
+         <p>
+         <em>Kunnianhimo.</em> Hyvä ohjelmoija miettii aina, miten tietyn koodinpätkän voisi kirjoittaa vieläkin paremmin. (Tässä ”paremmin” tarkoittaa samaa kuin yllä: tarkemmin, lyhyemmin, elegantimmin.) 
+         </p>
+
+         <p>
+         <em>Luovuus.</em> Ohjelmoinnissa samaan lopputulokseen voi yleensä päätyä kymmenillä eri tavoilla, ja näistä tavoista useakin erilainen voi olla vieläpä täysin järkevä. Hyvä ohjelmoija ei jumitu toistamaan itseään vaan pohtii ongelmaa monilta eri suunnilta. Jos ongelma on vähänkin monimutkaisempi, kaksi huippuohjelmoijaakin ratkaisee sen todennäköisesti hiukan eri tavoilla.
+         </p>
+
+         <p>
+         <em>Tarkkuus.</em> Kun tietokoneelle antaa ohjeita, on otettava huomioon monia asioita oikeakielisyydestä siihen, että kone ei varmasti voi ymmärtää eri tavoin ihmisen tarkoitusperiä. Siksi ohjelmoijan on oltava tarkkana kuin porkkana. Tarkkuus kehittyy kuitenkin tekemisen kautta. Ohjelmoijaksi haluavan ei tarvitse olla valmiiksi erityisen pikkutarkka luonne.
+         </p>
+
+         <h4>Pitääkö ohjelmoijan osata matematiikkaa?</h4>
+
+         <p>
+         Ohjelmointitaito ja matemaattiset kyvyt liitetään usein toisiinsa. Joissain asiayhteyksissä matematiikasta onkin hyötyä, sillä ohjelmoija saattaa joutua kertomaan tietokoneelle, millainen käyrä sen on osattava piirtää tai ymmärrettävä, että tietty ongelma ratkeaa parhaiten hyödyntämällä vaikkapa jakojäännöksen käsitettä laskutoimituksissa.
+         </p>
+
+        <em class="block-emphasize"> Monilla osa-alueilla voi pärjätä ohjelmoijana, vaikka ei olisi ollut luokan matikkanero.</em>
+      
+
+         <p>
+         On kuitenkin tärkeää ymmärtää, että ohjelmoinnissa oleellisempaa on yleinen kyky pohtia asioiden loogisia syitä ja seurauksia kuin laskennnallinen matemaattinen osaaminen. Monilla osa-alueilla voi pärjätä ohjelmoijana, vaikka ei olisikaan ollut luokan matikkanero. Monille halu oppia ohjelmoimaan paremmin antaa kuitenkin lisämotivaatiota ymmärtää myös matematiikkaa paremmin.
+         </p>
+
+         <h4>Mitä eroa on ”ohjelmoinnilla” ja ”koodaamisella”?</h4>
+
+         <p>
+         Ohjelmointi ja koodaaminen tarkoittavat käytännössä samaa asiaa eli tietokoneen ymmärtämän ohjelmakoodin kirjoittamista. 
+         </p>
+
+         <p>
+         Tämä ei tarkoita, etteikö termeihin liittyisi sekaannusta:
+         </p>
+
+         <p>
+         Tvt, atk, it, ict, tietotekniikka, tietojenkäsittelyoppi, tietojenkäsittelytiede, digitaalinen lukutaito… Tietokoneisiin liittyvä sanasto on ongelmallista, sillä käytämme eri ilmaisuja sekaisin.
+         </p>
+<p>
+         <em class="block-emphasize">Peruskoulussa hyviä perusvarmoja ja monipuolisia aloituskieliä ovat esimerkiksi JavaScript, Python ja Ruby. </em></p>
+
+         <p>
+         Myös ”tietotekniikkataidot” voivat nykyisin olla mitä tahansa lähtien hiiren käyttötaidosta ja taulukkolaskennasta aina siihen, että rakentaa itse tietokoneen, kirjoittaa ohjelman tai pystyttää lähiverkon. Samalla tavalla tietotekniikka koulussa voi tarkoittaa oppiainetta jossa opetetaan turvallista internetin käyttöä tai sitä, miten lähiverkko yhdistää printterit ja koneet toisiinsa.
+         </p>
+
+         <h4>Miksi on niin monia ohjelmointikieliä? Miten ne eroavat toisistaan?</h4>
+
+         <p>
+         Ohjelmoijat rakastavat työkaluja, ja samalla tavalla kuin puusepät tai arkkitehdit rakentavat omia erikoistuneita työkalujaan, ohjelmoijat voivat kirjoittaa uusia ohjelmointikieliä ratkaisemaan erilaisia ongelmia. 
+         </p>
+
+         <p>
+         Jotkut kielistä antavat ammattilaiselle vapauden lähes kaikkeen (C), toiset ovat hyviä verkkosivustokäyttöön (JavaScript) ja kolmannet helppoja aloittaa (Ruby). Jotkut ovat hyviä matematiikassa (Haskell), toiset tilastotieteissä (R). Jotkut sopivat Applen älypuhelimille (Objective-C), toiset vaikkapa puhelinverkkojen toteuttamiseen (Erlang).
+         </p>
+
+         <p>
+         Peruskoulussa hyviä perusvarmoja ja monipuolisia aloituskieliä ovat esimerkiksi JavaScript, Ruby ja Python. Näistä voit lukea lisää <a href="opetus.html#section-5">Miten ohjelmointia opetetaan</a> -osiosta.
+         </p>
+
+
+
+         <h4>Mikä ohjelmointikieli aloittelijan kannattaa valita?</h4>
+
+         <p>
+         Aloittelijan kannattaa valita kieli riippuen siitä, mitä haluaa saada aikaan. Tietokoneen työpöydällä, internetissä ja puhelimessa olevat sovellukset on saatettu koodata eri kielillä. Jos tietää mitä haluaa tehdä, kannattaa googlata mistä ideaasi muistuttava sovellus koostuu. Kaikki kielet muistuttavat kuitenkin perusperiaatteiltaan toisiaan, joten aloittaa voi melkein mistä vain.
+         </p>
+
+         <p>
+         Monille hyvä ensimmäinen ohjelmointikieli on sellainen, jolla saa nopeasti aikaan jotain näkyvää, eikä asentamiseen ja työympäristöön hallintaan tarvitse käyttää paljoa aikaa. Jos haluaa rakentaa verkkosivuston, riittää <a href="/opetus.html#section-8">opetella HTML:ää ja CSS:ää</a>, jotka eivät ole edes varsinaisia ohjelmointikieliä. Jos verkkosivustosta haluaa interaktiivisen, kannattaa opetella JavaScriptiä. Lisää vinkkejä ohjelmoinnin aloittamiseen löytyy tämän <a href="/opetus.html">oppaan osiosta 3</a>.
+         </p><p>
+         <em class="block-emphasize">
+         Eri älypuhelimille ohjelmoidaan eri ohjemointikielillä.</em>
+         </blockquote>
+</p>
+         <h4>Voiko samalla ohjelmointikielellä ohjelmoida tietokoneelle ja älypuhelimelle?</h4>
+
+         <p>
+         Riippuu tapauksesta, sillä eri älypuhelimien käyttöjärjestelmille ohjelmoidaan eri ohjelmointikielillä. Esimerkiksi Android-nimistä käyttöjärjestelmää käyttäville Samsungin tai HTC:n puhelimille tarkoitetut sovellukset ohjelmoidaan Java-nimisellä ohjelmointikielellä, jota käytetään myös muualla. Applen valmistamien iPhone-puhelimien iOS-käyttöjärjestelmälle taas ohjelmoidaan Objective-C:llä.
+         </p>
+        
+
+
+         <hr>
+
+         <h3 id="section-6" class="fixed-header-hash-fix">Esimerkkejä koodista</h3>
+
+         <p>
+         Tämän oppaan piirissä ei ole tarkoituksenmukaista tai edes mahdollista mennä siihen, miten varsinaista 
+         ohjelmakoodia kirjoitetaan. Eri ohjelmointikieliä on satoja, ja niiden oppimista varten löytyy lukemattomia 
+         oppaita ja verkkoresursseja.
+         </p>
+
+         <p>
+         Tämän osion tarkoituksena on kuitenkin vilauttaa maallikolle hiukan sitä, miltä kirjoitettu ohjelmakoodi esimerkiksi näyttää – ja miten eri kielet ja kielten tyypit karkeasti ottaen eroavat toisistaan esimerkiksi sen suhteen, millä tarkkuudella niillä operoidaan.
+         </p>
+
+         <p>
+         Seuraavat esimerkit havainnollistavat asiaa.
+         </p>
+
+         <h4>Esimerkki 0: Voileivän tekeminen</h2>
+
+         <p>
+         Ohjelmoinnin tavoitteena on opettaa tietokonetta tekemään toistuvasti sellaisia asioita, joita ihminen ei halua tehdä joka kerta käsin erikseen. Viimeisen kahdenkymmenen vuoden aikana kieliä on kehitetty ja koodia on kirjoitettu ja niin paljon, että monet sellaiset tehtävät, jotka ennen veivät satoja tai jopa tuhansia rivejä koodia saa moderneissa kielissä ilmaistua muutamalla rivillä.
+         </p>
+
+         <p>
+         Palataan aiempaan voileipäesimerkkiin: 
+         </p>
+
+         <p>
+         Eri ohjelmointikielet vaativat eri tarkkuuden kuvailua siitä, mitä halutaan tehtäväksi.
+         </p>
+
+         <p>
+         Joissain kielissä tietokoneelle pitää selittää jokainen vaihe hyvin tarkasti, mutta lopputuloksena ohjelmoijalla on täydellinen vapaus luoda täysin sellaista jälkeä, kuin itse haluaa.
+         </p>
+
+         <p>
+         Toiset kielet lähtevät siitä, että ohjelmoijalle riittää hyvä perussuoritus. Sen vuoksi kielen kehittäjät ovat tehneet yleisiin ongelmiin tukun valmiita ratkaisuja, joita ohjelmoija voi käyttää hyväkseen. Tämä nopeuttaa koodin kirjoittamista ja ohjelmointiongelmien ratkaisemista.
+         </p>
+
+         <p>
+         Asiaa voisi verrata vaikkapa siihen, haluatko maustaa lihakeiton liemen kasvattamalla itse omat yrttisi ja mausteesi (yksityiskohtaisia ohjeita vaativat kielet) – vai riittääkö sinulle, että laitat keitetyn veden sekaan kaupasta ostetun lihaliemikuution (modernit helppokäyttöiset kielet).
+         </p>
+
+         <p>
+         Monille meistä jälkimmäinen riittää, mutta ammattikokki voi haluta täyden kontrollin.
+         </p>
+
+         <p>
+         Voileipäohjeiksi käännettynä muutama eritasoinen ohjelmointikieli voisi näyttää tältä ihmisen kielellä kirjoitettuna: 
+         </p>
+
+         <p>
+         <strong><em>Valmiin toiminnallisuuden sisältävä kieli, esimerkiksi JavaScript tai Ruby</strong></em>
+         </p>
+         <p>
+         <code>
+         Tee voileipä.<br>
+         </code>
+         </p>
+
+         <p>
+         <strong><em>Keskitason ohjeita vaativa kieli, esimerkiksi C</strong></em>
+         </p>
+         <p>
+         <code>
+         Kävele kaapille.<br>
+         Ota kaapista leipäpussi.<br>
+         Aseta leivät pussista pöydälle.<br>
+         Voitele leipä.<br>
+         </code>
+        </p>
+
+         <p><strong><em>Hyvin yksityiskohtaiset ohjeet vaativa kieli, esimerkiksi konekieli Assembly</strong></em>
+         </p>
+         <p>
+         <code>
+         Ota askelia kohtisuoraan, kunnes saavut keittiön kaapille.<br>
+         Kun saavut kädenmitan päähän kaapista, pysähdy.<br>
+         Nosta vasen kätesi.<br>
+         Avaa kaapiston vasen ovi tasan 90 asteen kulmaan kaapin alareunaan nähden.<br>
+         Käyttäen oikeaa kättäsi tartu ylimmällä hyllyllä olevaan leipäpussiin.<br>
+         Siirrä pussi pöydälle.<br>
+         Jos pussissa on suljin, poista se.<br>
+         Tartu pussissa olevaan ensimmäiseen leipään.<br>
+         Ota leipä pussista ulos.<br>
+         Laske leipä pöydälle.<br>
+         ...<br>
+         </code>
+         </p>
+
+         <h4>Esimerkki 1: Hello World!</h4>
+
+         <p>
+         Ohjelmointipiireissä on 1970-luvulta lähtien yleistynyt sympaattinen tapa: kun uutta kieltä lähdetäänopettamaan, perinteisesti ensimmäinen asia on opetella, miten kielen avulla tulostetaan tietokoneen näytölle sanat ”Hello World!”.
+         </p>
+
+         <p>
+         Hello World! -fraasin tulostaminen tapahtuu useimmissa kielissä yksinkertaisilla koodiriveillä, jotta aloittelija voi opastettuna seurata ohjelman toimintaa ja ymmärtää ohjelmointikielen perusteita.
+         </p>
+
+         <p>
+         Alla on esitetty neljä esimerkkiä siitä, miten Hello World! -sanat tulostuvat näytölle eri ohjelmointikielillä.
+         </p>
+
+         <p>
+         Lukijan ei tässä tarvitse ymmärtää, miten kielet tarkemmin ottaen toimivat. Esimerkkien tarkoitus on esitellä, miten erilaiselta sama tehtävä voi näyttää eri kielillä.
+         </p>
+
+         <p>
+         Huomaa, että alla läpikäydyt neljä ohjelmointikieltä ovat samat kuin yllä mainitussa voileipäesimerkissä ja etenevät yksinkertaisesta monimutkaisempaan suuntaan.
+         </p>
+
+         <p>
+         <strong><em>Ruby – ei näytä kovin vaikealta</strong></em>
+         </p>
+         <p>
+         <code>
+         puts ”Hello World!”<br>
+         </code>
+          </p>
+
+         <p>
+         <strong><em>JavaScript – mukiinmenevää tämäkin</strong></em>
+         </p>
+
+         <p>
+           <code>
+         console.log(”Hello World!”)<br>
+         </code>
+         </p>
+
+         <p>
+         <strong><em>C-kieli – vaatii jo perehtymistä</strong></em>
+         </p>
+
+         <p><code>
+         #include <stdlib.h><br>
+         #include <stdio.h><br>
+         <br>
+         int main(void)<br>
+         <br>
+         {<br>
+         &nbsp;  printf(”Hello World!\n”);<br>
+         &nbsp;  return EXIT_SUCCESS;<br>
+         }<br>
+         </code>
+         </p>
+
+         <p>
+         <strong><em>8086 Assembly – monimutkaista (eikä juuri enää käytössä)</strong></em>
+         </p>
+
+         <p><code>
+         DOSSEG<br>
+         .MODEL TINY<br>
+         .DATA<br>
+         TXT DB ”Hello World!$”<br>
+         .CODE<br>
+         START:<br>
+         &nbsp; &nbsp; MOV ax, @DATA<br>
+         &nbsp; &nbsp; MOV ds, ax<br>
+         <br>
+         &nbsp; &nbsp; MOV ah, 09h ; prepare output function<br>
+         &nbsp; &nbsp; MOV dx, OFFSET TXT ; set offset<br>
+         &nbsp; &nbsp; INT 21h ; output string TXT<br>
+         <br>
+         &nbsp; &nbsp; MOV AX, 4C00h ; go back to DOS<br>
+         &nbsp; &nbsp; INT 21h<br>
+         </blockquote>
+         END START<br>
+         </code>
+         </p>
+
+         <h4>Esimerkki 2: Numeronarvauspeli</h4>
+
+         <p>
+         Eri ohjelmointikieliä kirjoitetaan eri merkinnöin, ja samoja asioita ilmaistaan hiukan eri näkökulmista.
+         </p>
+
+         <p>
+         Alla olevalla koodilla saa luotua pienen pelin, jossa tietokone arpoo ensin jonkin ”ajattelemansa” numeron, jonka jälkeen käyttäjä koettaa arvata tuon numeron.
+         </p>
+
+         <p>
+         Monissa ohjelmointikielissä on esimerkiksi valmiiksi kirjoitettuja toimintoja (näitä kutsutaan funktioiksi), jotka valitsevat automaattisesti satunnaisen numeron ja muuttavat sen kokonaisluvuksi. Jotta ohjelmointia tuntematon lukija voisi seurata alla olevia esimerkkejä edes päällisin puolin, koodipätkiä on selitetty auki tavallisella kielellä – käytäntö, jota myös koodarit harrastavat!
+         </p>
+
+         <p>
+         Älä missään nimessä ahdistu, jos alla oleva näyttää vaikealta. Ohjelmointia opetellaan askeleittain, ja vaikka alla olevat esimerkit ovat suhteellisen yksinkertaisia, niitä ei käytännössä voi täysin ymmärtää ilman kyseisen kielten perusteiden opettelua.
+         </p>
+
+         <p>
+         <strong><em>Coffee Script</strong></em>
+         </p>
+         <p>
+         <code>
+         num = Math.ceil(Math.random() * 10)<br>
+         guess = prompt ”Arvaa mitä lukua välillä 1-10 ajattelen!”<br>
+         while parseInt(guess) isnt num<br>
+         &nbsp; guess = prompt ”Hävisit! Arvaa uudestaan.”<br>
+         alert ”Oikein arvattu!”<br>
+         </code>
+         </p>
+
+         <p>
+         Aluksi määritellään funktio nimeltä ”num”. Se valitsee satunnaisen luvun väliltä 1–10. Apuna tässä käytetään CoffeeScript-kielen valmiita työkaluja (”Math.ceil”- ja ”Math.random”-funktiot). Valittu luku on siis pelin ”oikea vastaus”, joka käyttäjän pitää arvata.
+         </p>
+
+         <p>
+         Seuraavaksi määritellään ”guess”-niminen funktio. Se näyttää käyttäjän näytöllä viesti-ikkunan, joka tiedustelee käyttäjää arvaamaan, mitä numeroa välillä 1–10 tietokone ”ajattelee”.
+         </p>
+
+         <p>
+         Sitten todetaan, että jos käyttäjän syöttämä arvattu numero ei vastaa ensimmäisen rivin satunnaisesti valittua, tietokoneen ”ajattelemaa” numeroa, näytetään käyttäjälle rivillä neljä oleva viesti. Sen mukaan käyttäjä ei arvannut oikein.
+         </p>
+
+         <p>
+         Jos käyttäjä arvaa oikein – eli syötetty luku on sama kuin ensimmäisellä rivillä oleva num – näytetään käyttäjälle viesti, jonka mukaan hän on arvannut oikein.
+         </p>
+
+         <p>
+         <strong><em>Python</strong></em>
+         </p>
+
+         <p>
+         <code>
+         import random<br>
+         <br>
+         target, guess = random.randint(1, 10), 0<br>
+         while target != guess:<br>
+         guess = int(input(’Arvaa ajattelemani luku välillä 1–10 kunnes saat sen oikein: ’))<br>
+         &nbsp; &nbsp; print(’Oikein arvattu!’)<br>
+         </code>
+         </p>
+
+         <p>
+         Tässä ”random.randint” on Python-kieleen sisäänrakennettu funktio, joka valitsee sattumanvaraisen numeron yhden ja kymmenen välillä. Nolla lopussa tekee luvusta kokonaisluvun (kuten sanottua, älä huoli, jos esimerkit eivät tunnu ymmärrettäviltä ilman perehtymistä kielen logiikkaan!).
+         </p>
+
+         <p>
+         Koodissa todetaan, että niin kauan kuin käyttäjän arvaus ”guess” ja tietokoneen ajattelema luku ”target” eivät ole yhtäsuuria, käyttäjää pyydetään arvaamaan yhä uutta numeroa.
+         </p>
+
+         <p>
+         Seuraavaksi esitetään viesti-ikkuna, joka pyytää käyttäjää syöttämään luvun välillä 1–10, kunnes hän arvaa tietokoneen ”ajatuksen” oikein. 
+         </p>
+
+         <p>
+         Kun ”guess” ja ”target” ovat lopulta samat, tietokone kertoo, että käyttäjä on arvannut oikein.
+         </p>
+         
+
+          <br>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer id="main-footer">
+    <div id="footer-upper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Oppaasta</h3>
+            <p>
+            Koodi2016-hankkeen takana ovat ohjelmoinnin opetukseen perehtynyt lastenkirjailija <a href = http://www.twitter.com/lindaliukas>Linda Liukas</a> sekä vapaa toimittaja ja luovan alan yrittäjä <a href = http://www.juhanimykkanen.com>Juhani Mykkänen</a>. Hanketta tukevat <a href = http://www.lvm.fi>Liikenne- ja viestintäministeriö</a>, <a href = http://www.ohjelmistoyrittajat.fi>Ohjelmistoyrittäjät ry</a>, <a href = http://www.sitra.fi>Sitra</a>, <a href = http://www.tek.fi>Tekniikan akateemiset TEK</a>, <a href = http://www.teknologiateollisuus.fi>Teknologiateollisuus ry</a>, <a href = http://www.startup-saatio.fi>Startup-säätiö</a>, <a href = http://www.diacor.fi>Diacor</a>, <a href = http://www.eficode.fi>Eficode</a>, <a href = http://www.futurice.com>Futurice</a>, <a href = http://www.reaktor.fi>Reaktor</a>, <a href = http://www.rovio.com>Rovio</a> ja <a href = http://www.supercell.net>Supercell</a>. Oppaan sisältöä saa jakaa ja monistaa vapaasti, kunhan lähde ja osoite Koodi2016.fi mainitaan.
+            </p>
+          </div>
+
+          <div class="col-sm-4">
+            <h3>
+              Jätä sähköpostiosoitteesi
+            </h3>
+            <p>
+              Jos haluat kuulla lisää ohjelmoinnin opettamisesta.
+            </p>
+            <form class="form-inline">
+              <div class="form-group">
+                <input class="form-control" type="email" />
+                <button type="submit" class="btn btn-default">OK</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-lower">
+      <p class="container">
+        © 2014 Juhani Mykkänen ja Linda Liukas
+      </p>
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/imakewebthings-jquery-waypoints-415eb55/waypoints.min.js" type="text/javascript"></script>
+  <script src="js/imakewebthings-jquery-waypoints-415eb55/shortcuts/sticky-elements/waypoints-sticky.min.js" type="text/javascript"></script>
+  <script src="bootstrap-base/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    // TODO: Make the sticky index stop when the user scrolls to the bottom of the page so that it doesn't cover the footer.
+    $(".workpage-index").waypoint("sticky", {offset: 60});
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-51679454-1', 'koodi2016.fi');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+</body>
+</html>

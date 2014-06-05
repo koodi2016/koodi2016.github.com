@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+<head lang="fi">
+  <meta charset="UTF-8">
+  <meta name="description" content="Koodi2016">
+
+	<meta property="og:title" content="Ohjelmointi tulee peruskouluun 2016. Koodi2016-opas ja -verkkosivusto kertovat opettajille ja opetusalan päättäjille, miksi ohjelmointi on tärkeää ja miten sitä voi opettaa."/>
+	<meta property="og:site_name" content="koodi2016.fi"/>
+	<meta property="og:image" content="http://koodi2016.fi/img/header-logo.png"/>
+	<meta property="og:description" content="Ohjelmointi tulee peruskouluun 2016. Koodi2016-opas ja -verkkosivusto kertovat opettajille ja opetusalan päättäjille, miksi ohjelmointi on tärkeää ja miten sitä voi opettaa."/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico">
+
+  <title>Koodi2016  | Miten ohjelmointia opetetaan? </title>
+
+  <link rel="stylesheet" href="bootstrap-base/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main-page.css" />
+</head>
+<body>
+
+  <header id="main-nav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="header-logo col-sm-2 col-12">
+          <a href="/">
+            <img src="img/header-logo.png" />
+          </a>
+        </div>
+
+        <ul class="nav nav-pills col-sm-7 col-12">
+          <li><a href="ohjelmointi.html">Miksi ohjelmointi on tärkeää?</a></li>
+          <li><a href="ops.html">Miten OPS muuttuu?</a></li>
+          <li><a class="active">Miten ohjelmointia opetetaan?</a></li>
+          <li><a href="haasteet.html">Haasteet</a></li>
+          <li><a href="tarinat.html">Tarinat</a></li>
+        </ul>
+
+        <div class="nav-download col-sm-3 col-12">
+          <button type="button" class="btn pdf-download">» Lataa ilmainen opas</button>
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="main-content">
+
+    <div class="workpage-header-wrapper">
+      <div class="container">
+        <h2 class="page-header">
+          <small>Osa 3:</small>
+          <br />
+          Miten ohjelmointia opetetaan?
+        </h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="workpage-index">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h5>Tässä osiossa:</h5>
+
+                  <ul>
+
+                    <li><a href="#section-1">Koodauksen opetus on ajattelun opettamista</a></li>
+                    <li><a href="#section-2">Ohjelmoinnin oppiminen on tekemistä</a></li>
+                    <li><a href="#section-3">1.-2.luokka: Nyt leikitään!</a></li>
+                    <li><a href="#section-4">3.-6.luokka: Visuaalinen ohjelmointiympäristö</a></li>
+                    <li><a href="#section-5">7.-9.luokka: Oikea ohjelmointikieli!</a></li>
+                    <li><a href="#section-6">Sopivaa luokasta riippumatta: Mobiilisovellukset</a></li>
+                    <li><a href="#section-7">Open tarkastuslista ensimmäiselle tunnille</a></li>
+                    <li><a href="#section-8">Tietokulma: Milloin opitaan tekemään verkkosivuja?</li>
+                    <li><a href="#section-9">Ohjelmointi ja muut oppiaineet</a></li>
+                  </ul>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://koodi2016.fi" data-hashtags="koodi2016">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  
+                  <div class="fb-like" data-href="http://koodi2016.fi" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+                  
+                </div>
+                <div class="col-sm-7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-7">
+        <hr>
+      <p> <em>Luet Koodi2016:n verkkoversiota. Olemme halunneet tarjota oppaan koko sisällön selaimella ja älypuhelimilla luettavana tekstinä, josta on helppo halutessaan leikata ja liimata sisältöä muualle. Jos kaipaat visuaalisesti näyttävämpää esitystä – ja vaikket kaipaisikaan – kannattaa tutustua myös oppaan <a href = lataa.html>näköisversioon</a>! </em></p>
+      <hr>
+          <h3 id="section-1" class="fixed-header-hash-fix">Koodauksen opetus on ajattelun opettamista</h3>
+          
+          <p class="lead">
+          Tämä osio antaa käsityksen siitä, miten ohjelmoinnin opetusta voi lähestyä peruskoulussa. Kyseessä ei ole oppimateriaali vaan kokoelma esimerkkejä, jotka toivottavasti sekä informoivat että inspiroivat opettajaa. 
+          </p>
+<p>Tässä osiossa lähestytään ohjelmoinnin opettamista peruskoulussa kahden pääharjoituskategorian kautta. Nämä ovat yhtäältä leikit sekä toisaalta erilaiset verkossa tarjolla olevat ympäristöt ohjelmointia ja sen opiskelua varten.</p>
+          <p>
+          Jotta opettaja ja oppilas ymmärtäisivät, miksi esitellyt leikit tai verkkoharjoitukset auttavat oppimaan ohjelmoimaan, on syytä käydä läpi, mistä niin kutsutussa <em>ohjelmoinnillisessa ajattelussa</em> on kyse.
+          </p>
+
+          <p>
+          Ohjelmoinnillinen ajattelu on hiukan hapuileva suomennoksemme englannin kielen termistä <em>computational thinking</em>. (Toinen mahdollinen suomennos voisi olla vaikkapa algoritminen ajattelu. Computational thinkingistä löytyy oivallinen tulostettava luokkahuoneharjoitus Code.org-sivustolta: <a href="http://learn.code.org/unplugged/unplug2.pdf">learn.code.org/unplugged/unplug2.pdf</a>)
+          </p>
+
+          <em class="block-emphasize">Ongelman palastelua osiin tarvitaan arkielämässä ja ohjemoinnissa.</em>
+
+          <p>
+          Ohjelmoinnilliselle ajattelulle on erilaisia määritelmiä, mutta usein sen esitetään koostuvan esimerkiksi seuraavassa esitetyn kaltaisista osa-alueista, jotka kaikki liittyvät siihen, minkälaisia ajattelutaitoja ihminen tarvitsee pystyäkseen ratkaisemaan ongelmia tietokoneen avulla. 
+          </p>
+
+          <p>
+          Huomionarvoista on, että listatut taidot eivät ole ainoastaan ohjelmointiin liittyviä. Samanlaisia ongelmanratkaisun taitoja tarvitaan koulussa esimerkiksi filosofian, matematiikan ja vieraiden kielten tunneilla – arkisesta elämästä puhumattakaan. 
+          </p>
+
+          <h4>Ongelman purkaminen osiin</h4>
+
+          <p>
+          Ongelman purkaminen osiin (<em>decomposition</em>) on taito, jota tarvitaan sekä arkielämässä että ohjelmoinnissa, kun ongelma on hiukankin monimutkaisempi ratkaistavaksi kerralla. 
+          </p>
+
+          <p>
+          Tyypillinen esimerkki ongelman purkamisesta osiin on, kun joku kysyy sinulta ajo-ohjeita Helsingin keskustasta luoksesi. Jos et asu Kolmen sepän patsaalla, on mahdotonta antaa yksikäsitteistä ohjetta yhdellä virkkeellä. Ongelma on hajotettava osiin: ”Lähde ensin Mannerheimintietä pohjoiseen. Kansallisoopperan kohdalla käänny oikealle. Jatka puoli kilometriä…” Ja niin edelleen.
+          </p>
+
+          <p>
+          Toinen esimerkki ongelman purkamisesta osiin olisi esimerkiksi siinä, kun maistat ystäväsi tekemää lihakeittoa ja haluat hahmottaa, miksi se on niin hyvää. Näet silmin, että liemessä on porkkanaa ja kaalia. Makuaistisi avulla pyrit tunnistamaan muita mausteita kuten suolan, pippurin ja vaikkapa valkosipulin.
+          </p>
+
+          <p>
+          Matematiikassa luvun 273 voi purkaa satoihin, kymmeniin ja ykkösiin: 2 x 100 + 7 x 10 + 3 x 1
+          Ohjelmoidessa vaikkapa verkkopankkia on välttämätöntä purkaa ongelma osiin: 
+          Ketkä pankkia käyttävät? (Ihmiset, yritykset jne.)
+          </p>
+
+          <p>
+          Mitä käyttäjät haluavat pankissa tehdä? (Maksaa laskun, ottaa lainaa jne.)
+          Mistä toimenpiteet koostuvat? (Laskun maksaminen koostuu tunnusluvun antamisesta, summan syöttämisestä, vastaanottajan tilinumeron antamisesta jne.) 
+          </p>
+
+          <h4>Kaavojen tunnistaminen</h4>
+
+          <p>
+          Kaavojen ja toistuvien sääntöjen tunnistaminen (<em>pattern recognition</em>) auttaa ratkaisemaan arkipäiväisiä ongelmia. Kun itkevä vauva hiljeni viime kerralla saadessaan tutin, sama ratkaisu voi auttaa tälläkin kerralla. Märkä puu näyttää syttyvän huonommin kuin kuiva.
+          </p>
+
+          <p>
+          Ohjelmoinnissa kykyä tunnistaa ongelmissa esiintyviä kaavoja on hyvin hyödyllinen, koska yhtäältä se auttaa ajattelussa kuten missä tahansa arkipäiväisessä ongelmassa, ja toisaalta kone on ongelmien ratkaisijana täydellisen kaavamainen: se toimii aina tarkalleen ja täydellisesti samalla tavalla suorituskerrasta toiseen. Siksi kerran oivallettua kaavaa voidaan soveltaa koneella yhä uudestaan oikein.
+          </p>
+
+          <h4>Algoritmien luominen</h4>
+
+          <p>
+          Algoritmilla tarkoitetaan kuvausta jonkin tehtävän suorittamiseksi tarvittavista toimenpiteistä. Kun arkielämässä huippukokki kirjoittaa ylös parhaan lihakeittonsa ainekset, niiden määrät ja suhteet sekä ohjeet ainesten valmistamiseksi keitoksi asti, kyseessä on paitsi keiton resepti myös sen valmistamiseen liittyvän algoritmin kuvaus. 
+          </p>
+
+          <p>
+          Kokin kirjaamaa algoritmia tarkalleen toistamalla kuka vain voi kerta toisensa jälkeen tehdä yhtä hyvää lihakeittoa kuin huippukokki.
+          </p>
+
+          <p>
+          Ohjelmoinnissa ohjelmoija on kokki ja tietokone on apuri. Se tekee tarkalleen, mitä reseptissä eli algoritmissa lukee. Ohjeet riittää kirjoittaa kerran, jonka jälkeen kone toteuttaa ne joka kerta napin painalluksella.
+          </p>
+
+          <h4>Ratkaisun yleistäminen ja automatisointi</h4>
+
+          <p>
+          Esimerkiksi matematiikassa pyritään ongelmia ratkaistaessa yleiseen muotoon. Lukiolainen saa toisen asteen yhtälön 2x<sup>2</sup> - 3x + 1 = 0 ratkaisut selville suoraan toisen asteen yhtälön ax<sup>2</sup> + bx + c = 0 yleisestä ratkaisukaavasta (ei esitetty tässä), johon voimme sijoittaa luvut 2, -3 ja 1 lukujen a, b ja c tilalle.
+          </p>
+
+          <p>
+          Ohjelmoinnissa ongelmille haetaan hyvin usein yleistettyjä ratkaisuja. Kun ohjelman halutaan piirtävän näytölle suorakaiteen, olisi typerää kirjoittaa ohjelma siten, että se osaa tehdä vain suorakaiteita, joiden sivujen pituudet ovat aina 3 ja 5. 
+          Sen sijaan ohjelma on järkevää kirjoittaa siten, että se osaa piirtää minkä tahansa kokoisen suorakaiteen riippuen siitä, mitkä mitat käyttäjä ohjelmaan syöttää. 
+          </p>
+
+          <p>
+          Parasta ohjelmoinnissa on, että ratkaisuja voi automatisoida sälyttämällä vastuun niistä koneen harteille. 
+          Kun ihminen ratkaiseen toisen asteen yhtälöä, hän joutuu sijoittamaan luvut kaavaan yhä uudestaan. Kun koneelle opettaa kaavan kerran, se antaa ajasta ikuisuuteen oikeat yhtälön ratkaisut nanosekunnissa riippumatta siitä, mitkä luvut a:n, b:n ja c:n tilalle laittaa.
+          </p>
+
+          <p>
+          Kun opettaja lähtee yksin tai luokan oppilaiden kanssa perehtymään tässä osiossa jäljempänä esiteltyihin leikkeihin tai harjoituksiin, hän huomaa pian, että ne kaikki opettavat tai harjoittavat yhtä tai useampia yllä esitetyistä taidoista: ongelman pilkkomista, kaavojen hahmottamista, algoritmien luomista ja ratkaisujen esittämistä yleistettävässä muodossa.
+          Ohjelmoinnin opettaminen onkin pohjimmiltaan näiden taitojen opettamista.
+          </p>
+
+          <p>
+          Toki: ohjeet annetaan tietokoneelle ohjelmointikielellä, jonka säännöt ja merkintätavat on myös tunnettava. Mutta mitä pidempään ihminen ohjelmoi, sitä pienemmäksi muuttuu syntaksin muistamisen rooli ja sitä enemmän korostuu yllä kuvattujen taitojen merkitys.
+          </p>
+
+          <h3 id="section-2" class="fixed-header-hash-fix">Ohjelmoinnin oppiminen on tekemistä</h3>
+
+          <p>
+          Toinen hyvin keskeinen asia ohjelmoinnin opettamiseen liittyen on, että ohjelmointia ei todella voi oppia muuten kuin itse tekemällä.
+          </p>
+
+          <p>
+          Tässä mielessä ohjelmointi on kuin kuvaamataito, matematiikka, englanti, puutyöt tai vaikka jalkapallon pelaaminen. Kuka vain voi selostaa taustalla olevaa teoriaa ja sitä, mistä noin periaatteessa on kyse laveerauksessa, yhtälön ratkaisemisessa, keskustelemisessa britin kanssa, lankun höyläämisessä tai keskityksen antamisessa. Silti todellinen osaaminen tulee vain oman yrityksen ja erehdyksen kautta.
+          </p>
+
+          <p>
+          Ohjelmoijien kyvyt ovat usein pitkälle verrannollisia siihen, minkä verran ihminen on ohjelmoinut. Millaisia ongelmia hän on kohdannut, kuinka monta tuntia sinnikkäästi niiden parissa puurtanut ja intohimoisesti etsinyt parasta mahdollista toteutusta.
+          </p>
+
+           <em class="block-emphasize">Lasten päästävä heti tekemään ja näkemään työnsä tulokset.</em>
+        
+
+          <p>
+          Samasta syystä ohjelmoinnin opetuksen peruskoulussa ei tämän oppaan kirjoittajien näkemyksen mukaan ole syytä olla teorian tankkaamista. Päinvastoin: lasten ja nuorten on päästävä saman tien tekemään, saman tien kokemaan ja saman tien näkemään työnsä tulokset näytöllä. 
+          </p>
+
+          <p>
+          Siksi seuraavassa läpikäytävät harjoitukset ja työkalut keskittyvät kaikki tekemiseen – eivät ohjelmoinnin syvälliseen filosofiaan tai vielä peruskoulutasolla esimerkiksi erilaisiin sovelluskehityksen suunnittelumalleihin. 
+          </p>
+
+          Ennen harjoitusten aloittamista
+
+          <p>
+          Sekä itse ohjelmointi että erilaiset ohjelmointikielet ovat ihmisten luomuksia. Niiden taustalla olevat ajatusmallit ovat kehittyneet enimmäkseen viime vuosikymmeninä ja elävät jatkuvasti. Siksi ne muuttuvat peruskoulumaisen opetuksen kannalta huomattavasti enemmän kuin esimerkiksi matematiikan tai biologian lainalaisuudet.
+          </p>
+
+          <p>
+          Myös ohjelmoinnin opettamiseen liittyvät työkalut kehittyvät jatkuvasti. Siksi ei ole yhtä oikeaa ja vakiintunutta tapaa opettaa ohjelmointia. Lisäksi erilaisille oppijoille sopivat erilaiset työkalut – toiset oppivat visuaalisesti, toiset puhetta kuuntelemalla, kolmannet kirjoista teoriaa lukemalla ja neljännet tekemällä.
+          </p>
+
+          <p>
+          Seuraaville sivuille on koottu esimerkkejä resursseista, joiden avulla opettaja pääsee alkuun ohjelmoinnin opettamisessa.
+          </p>
+
+          <p>
+          Käytännössä suurin osa listatuista työkaluista toimii netin välityksellä. Se tarkoittaa, että varsinaisia työkaluja ei ladata omalle tietokoneelle, vaan niitä käytetään Internet Explorerin, Firefoxin, Chromen tai Safarin kaltaisella nettiselaimella menemällä tiettyyn verkko-osoitteeseen – aivan kuin menisi Hesarin verkkosivuille lukemaan uutisia tai Telkku.comiin katsomaan tv-ohjelmatietoja.
+          </p>
+
+          <p>
+          Yksi selaimella verkossa tekemisestä saatava hyöty on, että harjoitusympäristöjen alkuperäiset luojat voivat päivittää niitä jatkuvasti netissä yhä helppokäyttöisemmiksi ja paremmin toimiviksi. Opettajan – kymmenistä oppilaista puhumattakaan – ei siis tarvitsee päivittää ohjelmistoja omalla koneellaan. 
+          </p>
+
+          <p>
+          Harjoitusympäristöt saattavat vaatia käyttäjälle oman profiilin tekemistä, mutta tästäkin seuraava hyvä puoli on, että tehdyt harjoitukset ja oppilaan kehitys säilyvät verkossa (siellä paljon puhutussa ”pilvessä”) tallessa ilman pelkoa tietojen katoamisesta fyysisen tietokoneen hajotessa. 
+          </p>
+
+          <p>
+          Jos oppilaat ovat liian nuoria rekisteröitymään esimerkiksi omalla sähköpostiosoitteella, voi useimpia harjoituksista tehdä myös ilman rekisteröitymistä. 
+          </p>
+
+          <p>
+          Jokaisessa alla luetelluista kategorioista on tässä oppaassa valittu esittelyyn yksi suositeltava opetuksen työkalu. Lisäksi on kerrottu siitä, minkä ikäisille työkalu soveltuu, miten tuntiin kannattaa valmistautua ja mitä työkalu vaatii käytettävältä laitteistolta. Lisäksi on annettu lyhyitä esimerkkejä muista työkaluista. 
+          </p>
+
+          <p>
+          Opetusmateriaaleja on esitelty seuraavissa kategorioissa: 
+          </p>
+
+          <lu>
+          <li>Leikit – erilaisia ohjelmointiajattelua opettavia leikkejä, erityisesti luokka-asteille 1–2.</li>
+          <li>Visuaaliset ohjelmointiympäristöt – luokka-asteille 3–6 sopivia työkaluja, jotka opettavat ohjelmointiajattelua ilman, että oppilaan tarvitsee kirjoittaa ohjelmakoodia.</li>
+          <li>Ohjelmointikielet – luokka-asteilla 7–9 perehdyttäväksi tarkoitettuja oikeita ohjelmointikieliä, joista oppilaan on tarkoitus ymmärtää yläkoulun aikana perusteet.</li>
+          <li>Mobiiliapplikaatiot – erityisesti älypuhelimille ja tableteille tarkoitettuja ohjelmoinnin oppimisen työkaluja.</li>
+          </lu>
+
+          <p>
+          Lisäksi osoitteessa <a href="http://koodi2016.fi/koodauspaiva">Koodi2016.fi/koodauspaiva</a> on esitelty resurssien pohjalta esimerkkejä niin kutsutuista koodauspäivistä, joita koulussa voidaan pitää eri luokka-asteilla.
+          </p>
+
+<hr>
+<h3 id="section-3" class="fixed-header-hash-fix">1.–2. luokka: Nyt leikitään!</h3>
+
+          <p>
+          Ohjelmointiin sopivien ajattelumallien opettaminen ei vaadi aina tietokonetta. Peruskäsitteitä ja toimintatapoja voi opetella leikkien kautta. 
+          </p>
+
+          <p>
+          Useimmissa ohjelmointiajattelua opettavissa leikeissä lapsi oppii ymmärtämään, millä tavalla tietokonetta on ohjeistettava, jotta se osaa ratkaista ongelmia. Tällöin leikissä pyritään siihen, että tietyt toimet suoritetaan tietyssä järjestyksessä tehtävän ratkaisemiseksi. 
+          </p>
+
+          <p>
+          Luokanopettajan on hyvä hahmottaa, miten eri leikit liittyvät myöhemmillä luokilla esille tuleviin käsitteisiin, ja miten eri aineissa voi hyödyntää erilaisia leikkejä. Lapsille tärkeintä on tekemisen ilo ja myönteinen, innostunut altistuminen ohjelmointiin liittyville ajattelumalleille.
+          </p>
+
+          <p>
+          Kun lapsi etsii lyhimmän reitin ulos sokkelosta tai lajittelee laulut aakkosjärjestykseen, hän oppii myös ohjelmoinnissa hyödynnettäviä taitoja.
+          </p>
+
+          <h4>CS Unplugged</h4>
+
+          <p>
+          Verkkosivusto CS Unplugged on kokoelma opettajien toistensa avuksi suunnittelemia ohjelmointia opettavia leikkejä, joiden leikkimiseen ei tarvita lainkaan tietokonetta tai muuta tekniikkaa. Sen sijaan CS Unpluggedin harjoitukset opettavat ohjelmoinnin perusteita pelien, liikunnan, paperille piirrettävien harjoitusten tai vaikkapa pingispallojen avulla.
+          </p>
+
+          <p>
+          Suureen osaan harjoituksista liittyy video. Harjoituksia tekevät vapaaehtoiset opettajat ympäri maailmaa. Opettajille on myös tehty oma, kevyt opaskirja.
+          </p>
+
+          <p>
+          Miten pääsee alkuun: Mene osoitteeseen <a href="http://csunplugged.org/">csunplugged.org</a> ja selaile sivustolla esitettyjä harjoituksia. Seuraavassa on myös esimerkki eräästä CS Unpluggedin harjoituksesta.
+          </p>
+
+         <img src="img/csunplugged.png" width="550px">
+         <p>
+          <small> CS Unplugged -sivuston vasemmasta laidasta löytyy lista erilaisia ohjelmointia opettavia harjoituksia, joiden tekemiseen ei tarvita konetta. Opettaja voi ladata yksittäiset harjoitukset – kuten kuvassa esitetyn Harold-robotti-harjoituksen – tulostettavana pdf-tiedostona oikean laidan linkistä.</small></p>
+   
+
+          <h4>Esimerkki: Harold-robotti-harjoitus</h4>
+
+          <p>
+          Eräs esimerkki CS Upluggedin sisältämistä harjoituksista on nimeltään Harold-robotti (<a href="http://csunplugged.com/programming-languages-0">csunplugged.com/programming-languages-0</a>).
+          </p>
+
+          <p>
+          Harjoituksessa opettaja esittää robottia, joka tottelee lapsia täydellisesti. Lapset puolestaan yrittävät saada opettajan suorittamaan jonkin tehtävän kuten kokoamaan palikoista tornin, tekemään voileivän tai juomaan kahvikupin.
+          </p>
+
+          <p>
+          Opettajan tehtävä on toimia tarkalleen lasten ohjeiden mukaisesti. Lapset oppivat pian, että komentojen on oltava hyvin tarkkoja, tai robotti toimii väärin.
+          </p>
+
+          <p>
+          Harjoitus opettaa – edelliseen kappaleeseen viitaten – esimerkiksi ongelman pilkkomista osiin sekä algoritmista ajattelua.
+          </p>
+
+          <p>
+          Harjoitus voisi kulkea esimerkiksi seuraavasti:
+          </p>
+
+          <p>
+          Opettaja asettaa yksinkertaisen, esimerkiksi viisikerroksisen tornin kokoamiseen tarvittavat puupalikat luokan eteen pöydälle. 
+          Opettaja seisoo paikoillaan tönkkönä ja alkaa esittää Harold-robottia. Harold pystyy vastaamaan vain tiettyihin komentoihin. Näitä komentoja ei anneta lapsille etukäteen.
+          </p>
+
+          <p>
+          Opettaja pyytää lapsia ohjaamaan Haroldia yksiselitteisillä komennoilla, kuten ”siirrä kättäsi vasemmalle” tai ”valitse kätesi vieressä oleva palikka”. Jos lapsi yrittää liian monimutkaista komentoa tai komentoa, joka ei sisälly Haraldin sanavarastoon (esimerkiksi ”laita kolme palikkaa päällekäin), opettaja pudistelee päätänsä.
+          </p>
+
+          <p>
+          Tehtävä on valmis, kun torni on rakennettu. Opettaja keskustelee lasten kanssa siitä, mihin komentoihin robotin voi olettaa voivan vastata ja mitä tietokonemaista robottia todennäköisesti ei voi pyytää tekemään. 
+          </p>
+
+          <h5>Tavoite:</h5> Lapsi oppii, minkälaisia ohjeita tietokone pystyy seuraamaan, ja miten kirjaimellisesti ohjeet on annettava, jotta aivoton kone voi seurata niitä. 
+          <h5>Kenelle:</h5> Alakouluikäisille.
+          <h5>Vaatimukset ja valmistautuminen:</h5>
+          Ei teknisiä vaatimuksia. Vaatii valmistautumista – opettaja ohjaa leikin. 
+          <h5>Kieli:</h5> Englanti.
+          <h5>Hinta:</h5> Ilmainen, halutessaan voi ostaa kirjan jossa harjoituksia on kuvattu vielä yksinkertaisemmin. 
+          <h5>Osoite:</h5> <a href="http://csunplugged.org/"> csunplugged.org</a>
+
+          <h4>Muita 1–2-luokille sopivia resursseja</h4>
+<hr>
+          <table>
+          <th>
+          <td>Robottileikki</td>
+          <td>Computer Sciencein-a-Box: Unplug Your Curriculum</td>
+          <td>Computer Science for Fun</td></strong>
+          </th>
+          <tr>
+          <td>Lyhyesti</td>
+          <td>Kuuluisa labyrinttileikki, jossa lapset ohjaavat robottia kohti maalia.</td>
+          <td>CSUnplugged.orgsivuston pohjalta koottuja harjoituksia.</td>
+          <td>Aktiviteetteja alakouluikäisille brittiopettajilta.</td>
+          </tr>
+          <tr>
+          <td>Luokka</td>
+          <td>1–6</td>
+          <td>1–6</td>
+          <td>1–6</td>
+          </tr>
+          <tr>
+          <td>Valmistautuminen</td>
+          <td>Vaatii valmistautumista, mutta harjoitukset ovat helppoja.</td>
+          <td>Vaatii valmistautumista – sisältää vastaukset ongelmiin ja pohjustavia videoita.</td>
+          <td>Vaatii valmistautumista – opetusmateriaalin valmistus.</td>
+          </tr>
+          <tr>
+          <td>Lyhyesti</td>
+          <td>Kuuluisa labyrinttileikki, jossa lapset ohjaavat robottia kohti maalia.</td>
+          <td>CSUnplugged.orgsivuston pohjalta koottuja harjoituksia.</td>
+          <td>Aktiviteetteja alakouluikäisille brittiopettajilta.</td>
+          </tr>
+          <tr>
+          <td>Vaatimukset</td>
+          <td>Paperia, teippiä.</td>
+          <td>Luokkahuoneessa löytyvää tarpeistoa (paperia, magneetteja, liituja).</td>
+          <td>Paperia, pelikortit, videoprojektori.</td>
+          </tr>
+          <tr>
+          <td>Hinta</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          </tr>
+          <tr>
+          <td>Kieli</td>
+          <td>Ohjeet englanniksi.</td>
+          <td>Ohjeet englanniksi.</td>
+          <td>Ohjeet englanniksi, saksaksi, ranskaksi ja venäjäksi.</td>
+          </tr>
+          <tr>
+          <td>Osoite</td>
+          <td><a href="http://drtechniko.com/2014/02/04/how-to-train-your-robot-to-jump/">http://drtechniko.com/2014/02/04/how-to-train-your-robot-to-jump/</a></td>
+          <td><a href="http://www.ncwit.org/resources/computer-science-boxunplug-your-curriculum">ncwit.org/resources/computer-science-boxunplug-your-curriculum</a></td>
+          <td><a href="http://www.cs4fn.org/teachers/activities/">cs4fn.org/teachers/activities</a></td>
+          </tr>
+          </table>
+
+
+          <hr>
+          <h3 id="section-4" class="fixed-header-hash-fix">3.–6. luokka: Visuaalinen ohjelmointiympäristö</h3>
+                   
+          
+
+          <p>
+          Verkosta löytyy useita lapsille suunnattuja visuaalisia ohjelmointiympäristöjä sekä miniohjelmointikieliä. (”Miniohjelmointikieli” viittaa englannin termiin <em>educational programming language</em>, jonka voisi kääntää myös ”opetuskäyttöön luoduksi ohjelmointikieleksi”, mutta tässä käytetään lyhyempää muotoa ”miniohjelmointikieli”.) 
+          </p>
+
+          <p>
+          <em>Visuaalisia ohjelmointiympäristöjä</em> ovat esimerkiksi Logo ja Scratch, jotka opettavat koodaamisen perusteita omassa näkymässään. Visuaalisia ohjelmointiympäristöjä käyttämällä ei voi koodata vaikkapa iPhonelle, mutta ne opettavat ajatusrakenteita ja taitoja, joita voi hyödyntää myöhemmin niin sanotusti oikeasti ohjelmoidessa. 
+          </p>
+
+          <p>
+          Esimerkiksi Scratchin avulla tehdyt pelit ja muut tuotokset voi myös jakaa internetissä vaikkapa kavereiden ja sukulaisten saataville.
+          Visuaalisessa ympäristössä on varsinaista ohjelmointiympäristöä helpompi välttää virheitä, jotka vievät aloittelijan motivaation: Kun ohjelmoinnissa pilkku menee väärään paikkaan tai jostain puuttuu kirjain, sitä kutsutaan kirjoitusvirheen sijaan syntaksivirheeksi. Ne saattavat turhauttaa vasta-alkajaa, sillä yksikin virhe saattaa estää koko ohjelman toiminnan. Visuaalisissa ympäristöissä komentoja annetaan esimerkiksi raahaamalla ruudulla erilaisia palikoita. Sitä kautta päästään tekemisiin suurten linjojen kanssa, eikä pieniä tarkkuusvirheitä pääse syntymään.
+          </p>
+
+          <p>
+          <em>Miniohjelmointikielet</em> puolestaan näyttävät oikealta ohjelmoinnilta, mutta ne ovat oikeita kieliä helpompia ja nopeampia oppia. Monissa oikeissa ohjelmointikielissä on valtava määrä ominaisuuksia, joita tarvitaan ammattilaisten työympäristöissä monimutkaisia ohjelmistoja kehitettäessä. Tällöin yksinkertaisenkin asian tekeminen voi vaatia paljon koodia ja kokonaisen ohjelmointiympäristön hallintaa. 
+          </p>
+
+          <p>
+          Miniohjelmointikielissä keskitytään yksinkertaisiin alkeisiin. Ne opettavat ohjelmoinnin perusteita nopeasti ja näkyvin tuloksin. Monet miniohjelmointikieliin perustuvat ajatukset liittyvät tutkija <strong>Seymour Papertin</strong> työhön, ja lähes kaikista suosituista ohjelmointikielistä löytyy yksinkertaistettu aloittelijaversio. Pitkä lista näistä ohjelmointikielistä löytyy Wikipediasta: <a href="http://en.wikipedia.org/wiki/Educational_programming_language">en.wikipedia.org/wiki/Educational_programming_language</a>
+          </p>
+
+          <h4>Scratch</h4>
+
+          <p>
+          Scratch on tätä kirjoittaessa tunnetuin visuaalinen ohjelmointiympäristö, joka on – mahtavaa! – saatavilla keskeisiltä osin myös suomeksi. 
+          </p>
+
+          <p>
+          Arvostetussa yhdysvaltalaisessa teknisessä yliopistossa MIT:ssä kehitetty Scratch on ilmainen ohjelmointiympäristö, joka opettaa ongelmanratkaisutaitoja ja alkeellista ohjelmointia. Scratchista on myös tätä kirjoitettassa tulossa alle kouluikäisille suunnattu tablettiversio, ScratchJR.
+          </p>
+
+          <p>
+          Scratchin ajatus on, että oppilas ei kirjoita koodia. Sen sijaan asiat tehdään pääosin hiirellä raahaamalla: esimerkiksi ruudulle luodaan hahmoja ja liitetään niihin toiminnallisuuksia. Toiminnallisuuskia eli palikkamaisia työkaluja käyttämällä ja yhdistelemällä oppilas voi muodostaa esimerkiksi pelejä ja tarinoita. Samalla hän oppii ohjelmoinnillista ajattelua kuten ongelmien pilkkomista, algoritmeja ja toistettavuuden perusteita.
+          </p>
+
+          <p>
+          Scratchia käyttävät opettajat ympäri maailmaa, ja sen ympärille on syntynyt paljon harjoituksia. Scratchin yli neljän miljoonan (!) esimerkin joukosta löytyvät ohjelmointiohjeet esimerkiksi oman sähköisen pianon, joulukortin tai seikkailupelin luomiseen.
+          </p>
+
+          <p>
+          Opettajan on syytä tutustua Scratch-ympäristöön ainakin parin tunnin ajan etukäteen ja valita alkuun yhteinen harjoitus. Harjoituksia voi valita joko Scratchin omasta ympäristöstä tai lukea muiden opettajien suosituksia esimerkiksi suomalaisen Scratch Klubin sivuilta (<a href="https://sites.google.com/site/scratchklubi/">sites.google.com/site/scratchklubi</a>) tai kansainväliseltä Scratched-sivulta (<a href="http://scratched.media.mit.edu/">scratched.media.mit.edu</a>).
+          </p>
+
+          <p>
+          Oppilaita kannattaa myös kannustaa jakamaan ja selittämään omia ohjelmiaan.
+          </p>
+
+          <p>
+          Scratchin peruskonseptin ymmärtää parhaiten esimerkin avulla: 
+          </p>
+
+          <h4>Esimerkki: Interkatiivisen tervehdyskortin tekeminen Scratchilla</h4>
+
+          <p>
+          Esimerkiksi valitussa Scratch-harjoituksessa tehdään interaktiivinen tervehdyskortti, esimerkiksi äitienpäiväkortti. Harjoitus kestää noin oppitunnin. 
+          </p>
+
+          <p>
+          1. Ohjaa aluksi oppilaat osoitteeseen scratch.mit.edu/projects/editor/?tip_bar=hoc
+          (Huom.! Kaikki harjoitusten osoitteet ja mitkä tahansa www-osoitteet voi lyhentää vain muutaman kirjaimen mittaiseksi dy.fi-osoitteesta löytyvän palvelun avulla. Lyhyet osoitteet on huomattavasti helpompi jakaa oppilaille.)
+          </p>
+
+          <p>
+          2. Selitä oppilaille, että oppitunnin tarkoituksena on harjoitella ohjelmointia luomalla jaettava sähköinen tervehdyskortti (esimerkiksi äitienpäiväkortti, joulukortti, pääsiäiskortti tms.). Kerro, että sähköisestä, nettiselaimessa toimivasta kortista tulee sellainen, jota klikkaamalla sen hahmot liikkuvat, kortista kuuluu ääniä tai muita jännittäviä asioita tapahtuu sen mukaan, millaisen kortin kukin oppilas haluaa tehdä. 
+          </p>
+
+          <p>
+          3. Harjoituksessa on keskeistä nimenomaan lisätä korttiin erilaisia toiminnallisuuksia, jotta oppilaat pääsevät harjoittamaan ohjelmoinnillista ajatteluaan: mitä minun pitää käskeä tietokonetta tekemään, jotta ruudulla tapahtuu haluamani asia.
+          </p>
+
+          <p>
+          4. Aloittakaa vaihtamalla Scratchin kieli suomeksi klikkaamalla sivuston vasemmasta ylänurkasta maapallon kuvaa ja etsimällä valikosta sana ”suomi”. Jos oppilaat ymmärtävät englantia, voitte katsoa yhdessä oikeassa laidassa olevan videon, joka esittelee Scratchin perusideaa sekä joulukorttiharjoitusta. 
+          </p>
+
+          <p>
+          5. Kortin tekeminen koostuu vaiheista: aluksi näytölle lisätään hahmo, sitten hahmoon liitetään toiminnallisuus. Tämän jälkeen kortille lisätään taustakuva ja lopuksi kortti jaetaan ystäville.
+          </p>
+
+          <img src="img/Scratch1.png" width="550px"><p>
+          <small>Scratchin perusnäkymä. Vasemman ylänurkan maapallokuvakkeesta vaihdetaan kieleksi suomi.</small></p>
+
+          <p>
+          6. Hahmon lisääminen aloitetaan tuomalla näytölle jokin Scratchin tarjoamista valmiista kuvioista, jotka löytyvät Uusi hahmo -palkista. Scratchissa kaikki ohjelmat perustuvat hahmoihin ja niiden toimintaan. Hahmo voi olla valittu valmiista galleriasta, itse piirretty tai vaikkapa oppilaan oma valokuva itsestään. (Näytöllä valmiiksi olevan kissahahmon voi poistaa klikkaamalla ensin yläpalkin saksikuvaketta ja klikkaamalla sitten kissaa.)
+          </p>
+
+          <p>
+          7. Oheisessa kuvassa ruudulle tuotu hahmo on koira. Kun hahmo on tuotu ruudulle, siihen voidaan liittää erilaisia toiminnallisuuksia. Tämä on Scratchin koko konseptin ydin: oppilaan ei tarvitse kirjoittaa ohjelmakoodia, vaan hän valitsee valikosta erilaisia valmiita toiminnallisuuksia ja yhdistelee niitä sekä toisiinsa että näytöllä oleviin objekteihin mielensä mukaan. Toiminnallisuuksia käytetään yksinkertaisesti raahaamalla ne hiirellä valikosta toiseen ikkunaan.
+          </p>
+
+          <p>
+          8. Tehkää aluksi esimerkin vuoksi yhteinen toiminnallisuus, jota oppilaat voivat muokata. Pyydä oppilaita valitsemaan Tapahtuma-välilehdeltä ”Kun tätä hahmoa klikataan”-toiminnallisuuden sisältävä palikka ja raahaamaan se näkymän oikeanpuoleiseen osaan. 
+          </p>
+
+          <p>
+          9. Seuraavaksi pyydä oppilaita menemään Ulkonäkö-välilehdelle ja raahaamaan edellisen palikan alle uusi toiminnallisuus nimeltä ”Ajattele ‘TÄHÄN VALITSEMANNE TEKSTI’ 5 sekunnin ajan”. 
+          </p>
+
+
+          <img src="img/Scratch2.png" width="550px">
+          <p>
+          <small>Eri värisiä toiminnallisuuspalikoita raahataan oikeanpuoleiseen ikkunaan, jolloin niistä syntyy toiminnallisuuksia vasemmassa ikkunassa näkyvälle koiralle. Kuvassa koiralle on lisätty toiminnallisuus, jonka mukaisesti koiraa klikkaamalla ruudulle ilmestyy puhekupla: ”Hmm, tänään on äitienpäivä…” </small></p>
+
+
+          <p>
+          10. Klikatkaa hahmoa. Hahmolle syntyy puhekupla, jossa valittu teksti lukee. 
+          </p>
+
+          <p>
+          11. Tässä vaiheessa oppilas on saanut peruskäsityksen Scratchin toiminnallisuudesta. Seuraavaksi kukin voi kokeilla yhdistellä erilaisia toiminnallisuuksia. 
+          </p>
+
+          <p>
+          12. Erilaisia vaihtoehtoja ovat esimerkiksi hahmon taustan muokkaus. Hahmon voi laittaa myös toistamaan komentoja, liikkumaan ja puhumaan. Oheisessa kuvassa hahmolle on lisätty seuraavaksi toiminnallisuus, jossa se liikkuu ruudun poikki ja toteaa äitienpäivän kunniaksi: ”Lähdenkin tästä onnittelemaan!” Lisää inspiraatiota löytyy myös 2 500 muusta kortista: scratch.mit.edu/studios/279432.
+          </p>
+
+            <img src="img/Scratch3.png" width="550px">
+          <small>Koiralle on lisätty uusi toiminnallisuus, jonka mukaisesti koiraa klikkaamalla se liikkuu 10 kertaa peräkkäin 30 pienen pykälän verran oikealle. Liikkeen jälkeen koiralle ilmestyy puhekupla: ”Lähdenkin tästä onnittelemaan!”. Projektin voi tallentaa vasemman ylänurkan Tiedosto-nimisestä valikosta. </small>
+
+          <p>
+          13. Kehota oppilaita jakamaan projektinsa ystävilleen tai vanhemmilleen ”Jaa”-painikkeesta näytön oikeasta ylänurkasta. Tämä avaa projektin omaan ikkunaansa, jonka linkin voi jakaa kavereille sähköpostina tai vaikkapa Facebook-viestinä.
+          </p>
+
+          <p>
+          14. Jos ja kun haluatte palata projekteihinne, muistakaa tallentaa ne klikkaamalla hiirellä vasemman ylänurkan valikosta: ”Tiedosto” > ”Tallenna nyt”. 
+          </p>
+
+          <p>
+          Ohjeita opettajalle löytyy osoitteesta <a href="http://scratch.mit.edu/projects/editor/?tip_bar=hoc">scratch.mit.edu/hoc</a>
+          </p>
+
+          <blockquote>
+
+          <p>
+          <h3>Miten pääsee alkuun:</h3> Scratch-ympäristö on tätä kirjoittaessa suomennettu jo suurelta osin. Scratchiin liittyy myös opettajille tarkoitettuja tukimateriaaleja suomeksi:
+          <a href="http://avoinoppikirja.fi/tiedostot/muut/ohjelmointia_scratchin_kanssa.pdf">avoinoppikirja.fi/tiedostot/muut/ohjelmointia_scratchin_kanssa.pdf</a>
+
+          <p>
+          Tällä sivustolla on myös helposta vaikeaan etenevä lista harjoituksia:
+          <a href="https://sites.google.com/site/scratchklubi/">sites.google.com/site/scratchklubi/</a>
+          </p>
+
+          <p>
+          Suomenkielisiä pelinrakennusohjeita löytyy myös osoitteesta: cs.helsinki.fi/group/linkki/materiaali/kerho/mustakivi/Scratch.html
+          </p>
+
+          <p>
+          Scratchin ympärillä pyörii kokonainen verkkosivusto englanniksi osoitteessa: scratched.media.mit.edu/resources
+          </p>
+
+          <p>
+          <h3>Kenelle:</h3> Alakouluikäisille, mutta myös vanhemmille.
+          </p>
+
+          <p>
+          <h3>Vaatimukset:</h3> Moderni selain sekä Adobe Flash Player. Scratch on ladattavissa myös Windows-, OS X- (eli Mac-) ja Linux-koneille.
+          </p>
+
+          <p>
+          <h3>Kieli:</h3> Englanti, osin suomennettu.
+          </p>
+
+          <p>
+          <h3>Hinta:</h3> Ilmainen.
+          </p>
+
+          <p>
+          <h3>Osoite:</h3> <a href="http://scratch.mit.edu/">scratch.mit.edu</a>
+          </p>
+
+          </blockquote>
+
+          <h4>Muita 3–6-luokille sopivia resursseja</h4>
+
+          <table>
+          <th>
+          <td>Kodu</td>
+          <td>Alice</td>
+          <td>App inventor</td>
+          <td>Logo</td>
+          <td>Turtle Roy</td>
+          <td>HacketyHack, KidsRuby, TryRuby.org</td>
+          </th>
+
+          <tr>
+          <td>Lyhyesti</td>
+          <td>Microsoftin kehittämä visuaalinen ohjelmointiympäristö, jossa ohjelmoidaan pelejä.</td>
+          <td>3D-opetusympäristö, jossa opetellaan olioohjelmoinnin alkeita.</td>
+          <td>MIT:ssä kehitetty visuaalinen ohjelmointiympäristö, jolla voi tehdä Androidpuhelimissa toimivia applikaatioita.</td>
+          <td>1960-luvulla kehitetty ohjelmointiympäristö, joka on suunniteltu opettamista varten.</td>
+          <td>Suomalainen Logoon perustuva ohjelmointiympäristö, jota on käytetty osana Koodikoulua.</td>
+          <td>Lapsille suunnattu versio Ruby-kielestä.</td>
+          </tr>
+
+          <tr>
+          <td>Luokka</td>
+          <td>7–9</td>
+          <td>3–6</td>
+          <td>4–9</td>
+          <td>3–9</td>
+          <td>1–6</td>
+          <td>7–9</td>
+          </tr>
+
+          <tr>
+          <td>Valmistauminen</td>
+          <td>Videotutoriaaleja esim. <a href="https://www.youtube.com/watch?v=KWUyPpwQllE">youtube.com/watch?v=KWUyPpwQllE</a></td>
+          <td>Tutoriaaleja, esim.
+          <a href="http://alice.org/3.1/index.html">alice.org/3.1/index.html</td>
+          <td>Vaatii valmistautumista – opettajalla tulisi olla hyvä käsitys materiaalista <a href="http://appinventor.mit.edu/explore/teach.html">appinventor.mit.edu/explore/teach.html</a></td>
+          <td>Vaatii valmistautumista – internetissä useita e-kirjoja.</td>
+          <td>Hyvä tutustua komentoihin etukäteen.</td>
+          <td>Vaatii valmistautumista</td>
+          </tr>
+
+          <tr>
+          <td>Vaatimukset</td>
+          <td>Windows-käyttöjärjestelmä.</td>
+          <td>Windows-, OS X- (Mac) tai Linuxkäyttöjärjestelmä.</td>
+          <td>Google-tili, Androidpuhelin tai emulaattori.</td>
+          <td>Moderni verkoselain.</td>
+          <td>Moderni verkoselain.</td>
+          <td>Asennettava koneelle etukäteen, vaatii opettajalta valmistautumista.</td>
+          </tr>
+
+          <tr>
+          <td>Hinta</td>
+          <td>PC-versio maksuton, Xboxille viitisen euroa.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          </tr>
+
+          <tr>
+          <td>Kieli</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          </tr>
+
+          <tr>
+          <td>Osoite</td>
+          <td><a href="http://www.kodugamelab.com/">kodugamelab.com</a></td>
+          <td><a href="http://alice.org/index.php">alice.org/index.php</a></td>
+          <td><a href="http://appinventor.mit.edu/explore/">appinventor.mit.edu/explore</a></td>
+          <td><a href="http://el.media.mit.edu/logo-foundation/">el.media.mit.edu/logo-foundation/</a></td>
+          <td><a href="https://github.com/raimohanska/turtle-roy">github.com/raimohanska/turtle-roy</a></td>
+          <td><a href="http://hackety.com/">hackety.com/</a><br>
+          <a href="http://tryruby.org/levels/1/challenges/0">tryruby.org</a><br>
+          <a href="http://www.kidsruby.com/">kidsruby.com</a><br></td>
+          </tr>
+
+          </table>
+ 
+          <hr>
+          <h3 id="section-5" class="fixed-header-hash-fix">7.–9. luokka: Oikea ohjelmointikieli!</h3>
+
+                <p>
+          Opetussuunnitelman luonnoksen mukaan yläkoulussa aletaan perehtyä johonkin oikeaan ohjelmointikieleen.
+          </p>
+
+          <p>
+          OPH:n suunnitelma ei ota kantaa käytettävään kieleen. Käytännössä mahdollisia vaihtoehtoja ovat esimerkiksi Python, Ruby tai JavaScript. Nämä ovat nykyaikaisia, eri käyttötarkoituksiin sopivia mutta ammattilaistenkin käyttämiä kieliä, joiden alkeet ovat ymmärrettävissä yläkoulutasolla.
+          </p>
+
+          <p>
+          Haasteena varsinaiseen ohjelmointikieleen hypättäessä on antaa oppilaalle hyvä ensikokemus ohjelmoinnista, ja saada hänet näkemään nopeasti työn tulokset, mikä motivoi jatkamaan kielen tutkimista ja oppimista. Avainasemassa on tässä tarjota tunne jatkuvasta edistymisestä ja ottaa niin pieniä edistysaskelia, ettei oppilas tipahda kyydistä.
+          </p>
+
+          <p>
+          Alla listattuja ohjelmointikieliä voi opettaa asentamalla kyseisen ohjelmointikielen omalle pöytäkoneelle tai läppärille. Toisaalta ohjatut, selainympäristössä toimivat tuotteet tarjoavat usein sekä valmiita neuvoja harjoitusten läpiviemiseksi että automaattisen tarkastuksen kirjoitetulle koodille. Suomenkielistä kirjallisuutta yläkouluikäisille on ikävä kyllä toistaiseksi tarjolla niukasti. 
+          </p>
+
+          <blockquote>
+          <em>Tärkeintä on ottaa riittävän pieniä askelia ja tarjota oppilaalle tunne jatkuvasta edistymisestä.</em>
+          </blockquote>
+
+          <h4>Khan Academy</h4>
+
+          <p>
+          Mikä: Khan Academy on voittoa tavoittelematon sivusto, joka opettaa ohjelmoinnin lisäksi esimerkiksi matematiikan perusteita. 
+          Khan Academyssä opetettava kieli on nimeltään JavaScript. JavaScriptiä käytetään lähes kaikilla verkkosivuilla, kun sivustolle halutaan ohjelmoida interaktiivisia toiminnallisuuksia, animaatioita, pelejä tai muuta vastaavaa. Khan Academy opettaa kielen perusteet interaktiivisten harjoitusten ja videoiden avulla.
+          </p>
+
+          <p>
+          Khan Academyssä oppilas katsoo ensin videon (<em>talk-through</em>), jossa seuraavaksi tehtävän harjoituksen sisältö selitetään. Kaikkiin teemoihin liittyy myös niin sanottu haaste (<em>challenge</em>), jossa interaktiivisessa ympäristössä kokeillaan käytännössä aiemmin selitettyä. Harjoituksiin liittyy myös niin sanottu projekti (<em>project</em>), jossa opittua sovelletaan.
+          </p>
+
+          <p>
+          Khan Academy toimii erityisen hyvin itseopiskelussa. Harjoituksissa opitaan JavaScript-kielen perusteita koodaamalla lautasmalleja ja muistipelejä, mutta tutustutaan myös ohjelmoijiin työssään.
+          </p>
+
+          <p>
+          Ohjelmointiin liittyviä harjoituksia ei löydy vielä tätä kirjoittaessa suomeksi, mutta muuta sivuston sisältöä on jo vapaaehtoisvoimin käännetty suomeksi. 
+          </p>
+
+          <h4>Esimerkki: Väritysharjoitus JavaScriptillä</h4>
+
+          <blockquote>
+          <em>Khan Academyn väritysharjoitus JavaScript-kielellä.</em>
+          </blockquote>
+
+          <p>
+          Tältä näyttää harjoitus, joka liittyy JavaScriptillä värittämiseen Khan Academyssä. Vasemmalla näkyy koodia ja oikealla se, mitä koodi tekee (piirtää näytölle palloista, suorakaiteista ja viivoista koostuvan ukkelihahmon). 
+          </p>
+
+          <p>
+          Play-nappia painamalla voi seurata videota, jossa naisääni selittää koodin toiminnallisuutta ja tekee muutoksia koodiriveihin. Selostus on englanniksi, mutta hammasratasta klikkaamalla saa näkyville tekstitykset. Tekstityksiä ei vielä tätä kirjoittaessa ole suomennettu. 
+          </p>
+
+          <p>
+          1. Harjoitus kannattaa aloittaa kuuntelemalla ohjeistus. Selostuksen voi pysäyttää milloin tahansa. Näkymän alareunasta voi myös tarkistaa, minkälaisia kysymyksiä muilla on ollut aiheeseen liittyen, minkälaisia versioita samasta ohjelmasta on tehty, ja mitä dokumentaatiota on tarjolla. 
+          </p>
+
+          <p>
+          2. Selostuksen jälkeen on haasteen vuoro. Tässä kohden oppilas pääsee kokeilemaan taitojaan. Oheisessa kuvassa esitetyssä haasteessa muutetaan ensin koodin avulla kirsikka punaiseksi ja sen jälkeen askel askeleelta koko jäätelö. Kaikki komennot löytyvät näkymän alareunasta, ja tarvittaessa haasteisiin löytyy myös vinkkejä. 
+          </p>
+
+          <blockquote>
+          <em>Kuvateksti: Toinen väritysharjoitus JavaScript-kielellä. Vasemmalla olevaa koodia muuttamalla väritetään oikealla olevan kakun osien värejä.</em>
+          </blockquote>
+
+          <blockquote>
+          <em>Kolmas väritysharjoitus JavaScript-kielellä. Vasemmalla olevaa koodia muuttamalla luodaan oikealla olevalle lautaselle yksinkertaisia  geometrisia muotoja, jotka edustavat ruokaa.</em>
+          </blockquote>
+
+          <p>
+          3. Niin kutsutun projektin ideana on soveltaa aiemmin opittua ja tarjota ympäristö kokeilemiseen. Projektin voi tallentaa. Seuraavan sivun kuvassa esitetyn projektin tarkoituksena on piirtää koodia käyttämällä lautaselle erilaisia yksinkertaisista geometrisista muodoista koostuvia ruokia. 
+          </p>
+
+          <blockquote>
+
+          <p>
+          <h3>Kenelle:</h3> Khan Academy soveltuu yläkouluikäisille ja sitä vanhemmille.
+          </p>
+
+          <p>
+          <h3>Vaatimukset:</h3> Toimii lähes kaikilla tietokoneilla ilman asennusta. 
+          </p>
+
+          <p>
+          <h3>Miten pääsee alkuun:</h3> Khan Academy on hyvin ohjattu ympäristö, ja motivoitunut oppija käy ohjelmoinnin perusteet läpi ajatuksella muutamassa päivässä. Opettajan on hyvä kokeilla ensimmäiset harjoitukset läpi itse. 
+          </p>
+
+          <p>
+          <h3>Kieli:</h3> Englanti.
+          </p>
+
+          <p>
+          <h3>Hinta:</h3> Ilmainen. Takana on voittoa tavoittelematon yhteisö.
+          </p>
+
+          <p>
+          <h3>Osoite:</h3><br>
+          khanacademy.org/computing/cs
+          </p>
+
+          </blockquote>
+
+          <h4>Muita 7–9-luokille sopivia resursseja</h4>
+
+          <table>
+          <th>
+          <td>W3 Schools</td>
+          <td>Udacity</td>
+          <td>Codecademy</td>
+          <td>Code School</td>
+          <td>EdX</td>
+          <td>Helsingin yliopiston MOOC</td>
+          <td>MIT OpenCourseWare</td>
+          </th>
+
+          <tr>
+          <td>Lyhyesti</td>
+          <td>Verkon sanakirja. Sisältää HTML-, CSS-, JavaScript-, XML-, PHP ja SQL-termejä ja niihin liittyviä interaktiivisia koodipätkiä.</td>
+          <td>Useita amerikkalaisten yliopiston ohjelmointikursseja, joita seurataan videoiden ja harjoitusten kautta.</td>
+          <td>Interaktiivisia selaimessa suoritettavia harjoituksia. Kielivaihtoehtoina HTML, CSS, JavaScript, Python, Ruby ja PHP. Sopii itseohjautuvalle</td>
+          <td>Pidemmälle edistyneille syventäviä kursseja JavaScriptin, HTML:n, CSS:n Ruby:n ja iOS:n maailmasta. Oppilaat oppivat videoiden ja selaimessa tehtävien harjoitusten avulla.</td>
+          <td>Videoita Python-, Ruby-, C++-kielistä sekä koneälystä. Yhdistelmä pdftiedostoja, tutoriaaleja ja kysymyssarjoja.</td>
+          <td>Helsingin yliopisto järjestää avoimia verkkokursseja ohjelmoinnista.</td>
+          <td>MIT:n ohjelmointikursseja – sisältää erityisesti kehuttuja teoriakursseja, lukumateriaalia, harjoituskysymyksiä sekä luentovideoita.</td>
+          </tr>
+
+          <tr>
+          <td>Luokka</td>
+          <td>6–9+</td>
+          <td>9+</td>
+          <td>6–9+</td>
+          <td>9+</td>
+          <td>9+</td>
+          <td>9+</td>
+          <td>9+</td>
+          </tr>
+
+          <tr>
+          <td>Valmistauminen</td>
+          <td>Toimii parhaiten lunttilappuna.</td>
+          <td>Soveltuu erityisen edistyneille itseopiskeluun.</td>
+          <td>Hyvää opiskelumateriaalia myös opettajalle.</td>
+          <td>Soveltuu erityisen edistyneille itseopiskeluun.</td>
+          <td>Kurssit käynnissä vain tietyn aikaa.</td>
+          <td>Kurssit käynnissä vain tietyn aikaa.</td>
+          <td>Soveltuu itseohjautuvalle.</td>
+          </tr>
+
+          <tr>
+          <td>Vaatimukset</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          </tr>
+
+          <tr>
+          <td>Hinta</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen, mutta sertifikaatti maksaa.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          </tr>
+
+          <tr>
+          <td>Kieli</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti, osassa suomi.</td>
+          <td>Englanti.</td>
+          </tr>
+
+          <tr>
+          <td>Osoite</td>
+          <td><a href="http://www.w3schools.com/">w3schools.com</a></td>
+          <td><a href="https://www.udacity.com/">udacity.com</a></td>
+          <td><a href="http://www.codecademy.com/">codecademy.com</a></td>
+          <td><a href="https://www.codeschool.com/">codeschool.com</a></td>
+          <td><a href="https://www.edx.org/">edx.org</a></td>
+          <td><a href="http://mooc.cs.helsinki.fi/">mooc.cs.helsinki.fi</a></td>
+          <td><a href="http://ocw.mit.edu/index.htm">ocw.mit.edu/index.htm</a><br>
+          <a href="http://ocw.mit.edu/courses/intro-programming/">http://ocw.mit.edu/courses/intro-programming/</a></td>
+          </tr>
+
+          </table>
+
+          <h4>Muita 7–9-luokille sopivia resursseja</h4>
+
+          <table>
+          <th>
+          <td>Processing</td>
+          <td>Coursera</td>
+          <td>Code Avengers</td>
+          <td>Code Combat</td>
+          <td>ruby warrior</td>
+          <td>Dash</td>
+          <td>Kinestethic Learning Activities</td>
+          </th>
+
+          <tr>
+          <td>Lyhyesti</td>
+          <td>Kiinnostava vaihtoehto lapselle, joka on jo kokeillut JavaScriptin perusteet ja kaipaa visuaalisempaa oppimisympäristöä.</td>
+          <td>JavaScriptin, Pythonin ja tietokantojen perusteet. Perustuu yliopistokursseihin.</td>
+          <td>Selaimessa pelattava peli, jossa opitaan JavaScriptin, HTML:n ja CSS:n perusteita.</td>
+          <td>Selaimessa pelattava seikkailupeli, jossa opitaan JavaScriptin perusteita.</td>
+          <td>Selaimessa pelattava seikkailupeli, jossa opitaan Rubyn perusteita.</td>
+          <td>HTML:n ja JavaScriptin perusteet interaktiivisten harjoitusten perusteella.</td>
+          <td>Leikkejä, jotka opettavat ohjelmoinnin peruskäsitteitä. Soveltuvat myös vanhemmille oppilaille.</td>
+          </tr>
+
+          <tr>
+          <td>Luokka</td>
+          <td>6–9+</td>
+          <td>9+</td>
+          <td>3–9+</td>
+          <td>6–9</td>
+          <td>6–9</td>
+          <td>6–9+</td>
+          <td>7–9</td>
+          </tr>
+
+          <tr>
+          <td>Valmistauminen</td>
+          <td>Ei etene lineaarisesti, vaatii opetajalta perehtymistä.</td>
+          <td>Soveltuu itseohjautuvalle.</td>
+          <td>Opettajan on hyvä pelata itse läpi ensin.</td>
+          <td>–</td>
+          <td>–</td>
+          <td>Soveltuu myös opettajien itseoppimismateriaaliksi.</td>
+          <td>Vaatii valmistautumista – opettajan on hyvä lukea koko harjoituksen kuvaus.</td>
+          </tr>
+
+          <tr>
+          <td>Vaatimukset</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>Tietokone, internetselain.</td>
+          <td>–</td>
+          </tr>
+
+          <tr>
+          <td>Hinta</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          </tr>
+
+          <tr>
+          <td>Kieli</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Englanti.</td>
+          <td>Ohjeet englanniksi.</td>
+          </tr>
+
+          <tr>
+          <td><a href="http://processing.org/">processing.org</a></td>
+          <td><a href="https://www.coursera.org/course/cs101">coursera.org/course/cs101</a></td>
+          <td><a href="">codeavengers.com</a></td>
+          <td><a href="http://www.codeavengers.com/"></a></td>
+          <td><a href="http://codecombat.com/">codecombat.com</a></td>
+          <td><a href="https://www.bloc.io/ruby-warrior">bloc.io/ruby-warrior</a></td>
+          <td><a href="https://dash.generalassemb.ly/">dash.generalassemb.ly</a></td>
+          <td><a href="http://www.cs.ubc.ca/~kla/">cs.ubc.ca/~kla</a></td>
+          </tr>
+
+          </table>
+
+
+            <hr>
+            <h3 id="section-6" class="fixed-header-hash-fix">Sopivaa luokasta riippumatta:</h3>
+                     <h4>Mobiilisovellukset</h4>
+
+          <p>
+          Älypuhelimet ja tabletit ovat tulleet kiinteäksi osaksi arkeamme, ja mobiililaitteille on alkanut löytyä työkaluja myös ohjelmoinnin opettamiseen. Puhelimilla ja tableteilla voi monipuolistaa harjoituksia, mutta yksinään ne eivät vielä opeta ohjelmointia. Monet mobiilisovellukset ovat pulmapelejä, jotka muuttuvat haastavammiksi kierros kierrokselta. 
+          </p>
+
+          <blockquote>
+          <em>Puhelimilla ja tableteilla voi monipuolistaa harjoituksia. Monet mobiilisovellukset ovat pulmapelejä.</em>
+          </blockquote>
+
+          <p>
+          Mobiilisovellukset ovat tuotteina uusia, niiden hinnat vaihtelevat, eikä saatavilla ole yhtä ehdotonta vaihtoehtoa. Siksi olemme nostaneet esille kaksi erilaista sovellusta. Tätä kirjoitettaessa myös aiemmin esitellystä Scratchista on tulossa ScratchJR-niminen tablettiversio.
+          </p>
+
+          <h4>Tynker</h4>
+
+          <p>
+          Tynker on Scratchin inspiroima iPad-sovellus, joka opettaa lapselle koodauksen perusteita ongelmapelien avulla. Tynkerin harjoitukset vaikeutuvat kenttä kentältä. Harjoituksissa seikkailevat esimerkiksi koira, jonka pitää ohjelmoida tiensä takaisin kotiin sekä robotti, joka ohjaa avaruuskonetta. 
+          </p>
+
+          <p>
+          Pelaaminen Tynkerillä on hyvin ohjattua. Käyttöliittymä ja komennot ovat englanniksi, mutta ne ovat hyvin yksinkertaisia. 
+          Tynker sisältää paljon työkaluja opettajia varten. Oppilaita voi jakaa ryhmiin, ja tekemisen tahtia voi seurata oppilastasolla. Erilaisia opintokokonaisuuksia on kuusi, joissa jokaisessa on noin 45 minuuttia sisältöä. Lisää materiaalia saa maksua vastaan. Tynkeristä löytyy myös maksullinen verkkoversio, jota voi pelata iPadin sijaan pöytäkoneen tai kannettavan tietokoneen selaimessa. 
+          </p>
+
+          <blockquote>
+          <em>Tynker-iPad-sovellus. Koiran on selvitettävä tiensä esteiden yli oppilaan antamilla komennoilla.</em>
+          </blockquote>
+
+          <p>
+          Kuvassa esitetyssä tehtävässä lapsen tehtävänä on ohjata koira lakin luo. Vasemmalla olevaan ikkunaan raahataan Scratchista tuttuja komentopalikoita. Matkalla olevia esteitä kuuluu väistää. 
+          </p>
+
+          <p>
+          Komentopalikoista muodostuva koodi vaikeutuu taso tasolta. Tässä esimerkissä harjoitellaan niin kutsutun silmukan käsitettä eli saman asian toistamista yhä uudelleen. Oranssin ”repeat 3” -palikan sisälle raahataan violetti ”run”-komento. Näiden yhteisvaikutuksesta koira ottaa aina kolme askelta, hyppää esineen yli ja toistaa taas saman kolmen askeleen ja hypyn toiminnon. Kuten edellisen sivun kuvasta näkee, koira päätyy tällöin hyppäämään sekä kurpitsan että lippalakin yli.
+
+          <p>
+          Play-nappia painamalla oppilas pääsee kokeilemaan palikoista luomaansa koodia. Ohjelma myös antaa vinkkejä, jos oppilas jumiutuu. Tasoja voi ratkaista eri tavoin.
+          </p>
+
+          <p>
+          Kun taso on päästy läpi, oppilas näkee muun muassa, kuinka kauan ratkaisemiseen meni, ja olisiko tason voinut ratkaista muilla tavoin.
+          </p>
+
+          <h4>Hopscotch</h4>
+          <img src="img/Hopscotch0.PNG" width="200px">
+          <p>
+          Hopscotch on Tynkeriä monipuolisempi iPad-ympäristö, jossa lapsi voi kokeilla visuaalista koodaamista. Hopscotch muistuttaa myös edellä esiteltyä Scratchia. 
+          </p>
+
+          <p>
+          Koodipalikoista muodostuvat projektit voivat olla pelejä, tarinoita tai vaikka taidetta. Muiden rakentamia projekteja voi tutkia ja katsoa, miten ne on rakennettu. Tällä hetkellä Community-osiosta löytyy esimerkiksi peli, jossa eläimet juoksevat kilpaa, kun oppilas tökkää ruutua. 
+          </p>
+
+          <p>
+          Hopscotch on ilmainen. Sitä varten on myös kirjoitettu opettajan opas, jonka saadakseen on jätettävä sähköpostiosoitteensa. Opettajan oppaaseen sisältyy kalvoja, joissa selitetään Hopscotchin avulla esimerkiksi mitä on ohjelmointi, mitä ovat silmukat, mitä on satunnaisuus ja mitä ovat ehtolauseet. 
+           </p>
+           
+           <img src="/img/">
+          <p>
+          Hopscotchissa jokaiseen hahmoon liittyy sääntöjä. Kuvassa yllä apinaan liitetään sääntö, jonka perusteella se tanssii, kun projekti aloitetaan ja hyppää, kun apinaa tökätään. Lisäksi kaikilla hahmoilla on joukko kyvykkyyksiä, joka ovat ennalta ohjelmoituja koodipätkiä, joita voi käyttää sellaisenaan. Apina voi esimerkiksi tanssia, kasvaa tai leijua. Omia kyvykkyyksiä voi myös tallentaa. 
+          </p>
+
+          <em class="block-emphasize">
+          Koodia kirjoitetaan raahamalla Scratchista tuttuja liikkumiseen, piirtämiseen, ulkonäköön ja ehtoihin liittyviä palikoita ohjelmointialueelle. Erilaisia ohjelmapätkiä voi kirjoittaa useampia. Esimerkiksi tässä määritellään mielikuvituksellisesti, että ohjelman alkaessa karhuhahmo (ks. seuraavan sivun kuva) kasvaa 125 prosenttia, katoaa hetkeksi, liikkuu näytöllä 761 kuvapisteen verran ja pyörii 360 asteen ympyrää viisi kertaa.</em>
+       
+
+          <em class="block-emphasize">Kun painaa edellisen kuvan oikean ylänurkan Play-nappia, ohjelmakoodin toiminnallisuutta pääsee kokeilemaan käytännössä. Tässä tarinan alku karhuineen.</em>
+         
+
+          <h4>Muita mobiiliresursseja</h4>
+
+          <table>
+
+          <th>
+          <td>CargoBot</td>
+          <td>Kodable</td>
+          <td>Hakitzu</td>
+          </th>
+
+          <tr>
+          <td>Lyhyesti</td>
+          <td>Peli. Pelaajat oppivat logiikkaa siirtelemällä kontteja robottikädellä. Tasojen muuttuessa vaikeammiksi pelaajan pitää muodostaa funktioita ja käyttää jäljellä olevat siirrot tehokkaasti.</td>
+          <td>Kodable on ilmainen iPad-peli, joka opettaa yksinkertaisten logiikkaharjoitusten kautta ohjelmointia. Sopii parhaiten pienille.</td>
+          <td>Pelaajat oppivat JavaScriptin perusteet ohjaamalla taistelevia robotteja.</td>
+          </tr>
+
+          <tr>
+          <td>Luokka</td>
+          <td>3–6</td>
+          <td>1–2</td>
+          <td>5–9</td>
+          </tr>
+
+          <tr>
+          <td>Valmistauminen</td>
+          <td>Ohjelman asennus.</td>
+          <td>Ohjelman asennus.</td>
+          <td>Opettajan materaali:<br>
+          <a href="https://www.dropbox.com/s/doj9fug23eymsgf/Hakitzu%20Teachers%20Guide.pdf">dropbox.com/s/doj9fug23eymsgf/Hakitzu%20Teachers%20Guide.pdf</a></td>
+          </tr>
+
+          <tr>
+          <td>Vaatimukset</td>
+          <td>iPad, iPhone.</td>
+          <td>iPad, iPhone.</td>
+          <td>iPad, iPhone, Androidlaite</td>
+          </tr>
+
+          <tr>
+          <td>Hinta</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          <td>Ilmainen.</td>
+          </tr>
+
+          <tr>
+          <td>Kieli</td>
+          <td>Englanti.</td>
+          <td>Mm. englanti, suomi, ruotsi.</td>
+          <td>Englanti.</td>
+          </tr>
+
+          <tr>
+          <td>Osoite</td>
+          <td><a href="http://twolivesleft.com/CargoBot/">twolivesleft.com/
+          CargoBot</a></td>
+          <td><a href="http://www.kodable.com/">kodable.com/</a></td>
+          <td><a href="http://www.kuatostudios.com/">kuatostudios.com</a></td>
+          </tr>
+
+          </table>
+
+ <h3 id="section-7" class="fixed-header-hash-fix">Open tarkistuslista ensimmäiselle tunnille</h3>
+
+          <p>
+          Oli kyseessä sitten leikki tai verkkoresurssi, opettajan kannattaa käydä oheinen lista läpi ennen ensimmäistä ohjelmointiharjoitusta.
+          </p>
+
+          <h4>1. Valitse sopiva harjoitus</h4>
+
+          <p>
+          Valitse sopiva harjoitus tai tutoriaali hyödyntäen esimerkiksi jotain aiemmin tässä osiossa esiteltyä verkkoresurssia tai leikkiä. 
+          Käy harjoitus läpi itse, jotta tunnet sen kulun. 
+          </p>
+
+          <h4>2. Varaa tarvittavat resurssit</h4>
+
+          <p>
+          Tarkista, että harjoitus / sivusto / tutoriaali toimii oppilaan käytössä olevalla laitteella (mukaan lukien ääni ja kuva).
+          </p>
+
+          <p>
+          Jos harjoitus vaatii ääntä, eikä koululla ole tarjota kuulokkeita, pohdi, onko harjoitusta mahdollista käyttää tilassanne, vai tuleeko hälyä liikaa. Oppilaita voi myös pyytää tuomaan omia kuulokkeitaan oppitunnille.
+          </p>
+
+          <p>
+          Jos laitteita ei ole riittävästi, ohjaa kaksi tai useampia oppilaita saman laitteen ääreen. Kun oppilaat työskentelevät yhdessä, he auttavat toisiaan ja nojaavat vähemmän opettajaan. He oppivat myös, että ohjelmointi on ihmisten välistä yhteispeliä. 
+          </p>
+
+          <h4>3. Selitä oppilaille, miksi ohjelmointia opetellaan</h4>
+
+          <p>
+          Selitä ohjelmoinnin ajatus ja tarkoitus yksinkertaisella tavalla: ihminen käskee tietokonetta, koska kone osaa tehdä monia asioita ihmistä nopeammin ja varmemmin. Käytä esimerkkejä, joista sekä pojat että tytöt välittävät (ihmisten auttaminen ja elämien pelastaminen, ihmisten yhdistäminen toisiinsa, oppilaan käyttämän puhelimen toiminta ja sen sovellukset, pelit, elokuvat, musiikki).
+          </p>
+
+          <p>
+          Sano esimerkiksi: ”Ajatelkaa asioita, joita näette joke päivä: Älypuhelin. Mikroaaltouuni. Tabletti. Liikennevalo. Facebook. WhatsApp-viestiohjelma. Kaikki ne voivat toimia vain siksi, että joku on osannut ohjelmoida ne."
+          </p>
+
+          <p>
+          Tai: ”Ohjelmointi auttaa yhdistämään ihmisen luovat ideat ja tietokoneen tarjoamat voimavarat. Ohjelmoijia tarvitaan kehittämään uusia lääkkeitä, tekemään tietokonepelejä, luomaan animaatioelokuvia, rakentamaan robotteja, tutkimaan vieraita planeettoja tai kehittämään itseään ajavia autoja.”
+          </p>
+
+          <p>
+          Voit myös käydä läpi sivuilla 26–31 esiteltyjä esimerkkejä siitä, mitä kaikkea ohjelmoija voi luoda maailmaan.
+          </p>
+
+          <h4>4. Ohjaa oppilaat harjoituksen pariin</h4>
+
+          <p>
+          Kirjoita harjoituksen aloittamisen ohjeet näkyville.
+          </p>
+
+          <p>
+          Varmista, että kaikki saavat harjoituksen auki.
+          </p>
+
+          <em class="block-emphasize">Pyydä oppilasta kysymään ensin kolmelta kaverilta ja vasta sitten opettajalta.</em>
+          
+
+          <h4>5. Kun oppilas kohtaa ongelman</h4>
+
+          <p>
+          Kun oppilaalla on ongelma, voit sanoa: ”Kysy ensin kolmelta luokkakaverilta. Jos heillä ei ole vastausta, kysy sitten minulta.”
+          </p>
+
+          <p>
+          Tavalliset pedagogiset keinot toimivat myös ohjelmointiharjoituksissa. Rohkaise opiskelijoita onnistumisista: ”Hienoa Pörri, sinähän onnistuit! Kokeile saatko seuraavankin sujumaan!”
+          </p>
+
+          <p>
+          On täysin sallittua vastata oppilaalle: ”Enpä osaa vastata tuohon suoralta kädeltä. Katsotaan ongelmaa yhdessä.” 
+          </p>
+
+          <p>
+          Voit myös muistuttaa oppilaita: ”Ohjelmoimaan oppiminen on kuin uuden kielen oppimista: kukaan ei osaa kaikkea sujuvasti saman tien.”
+          </p>
+
+          <h4>6. Mitä tehdä oppilaille, jotka ovat selvästi muita edellä?</h4>
+
+          <p>
+          Oppilaat voivat kokeilla muita harjoituksia joko saman sovelluksen parissa tai muualla. Esimerkkejä sopivista harjoituksista löytyy tämän oppaan sivuilta 98–99 ja 106–109.
+          </p>
+
+          <p>
+          Ensimmäisinä harjoituksista selvinneet oppilaat voivat myös auttaa muita.
+          </p>
+
+          <p>
+          <em>Lista mukailee Code.org-sivuston opettajille suunnattua Quick Tips -listaa: <br>
+          <a href="http://code.org/learn">code.org/learn</a> (sivun alalaita)</em>
+          </p>
+
+          <h3 id="section-8" class="fixed-header-hash-fix">
+            Tietokulma: Milloin opitaan tekemään verkkosivuja?</h3>
+
+          <p>
+          Monet vasta-alkajat luovat verkkosivustoja nykyään valmiita sivustopohjia muokkaamalla. Jos sivut haluaa kuitenkin rakentaa itse tai oppia muokkaamaan valmiita pohjia monipuolisesti, HTML- ja CSS-kielistä on hyötyä.
+          </p>
+
+          <p>
+          HTML eli HyperText Markup Language ja CSS eli Cascading Style Sheets eivät ole kirjaimellisesti ohjelmointikieliä, vaan niin kutsuttuja kuvauskieliä. 
+          </p>
+
+          <p>
+          HTML on merkkauskieli, jota käytetään internetissä julkaistavan verkkosivuston luomiseen. Perusmuodossaan HTML:llä merkitään esimerkiksi, mikä osa verkkosivuston sisällöstä on tekstiä, mikä on otsikkoa, ja mihin kohden tulee kuva tai taulukko. 
+          CSS:ää puolestaan käytetään verkkosivuston ulkoasun muokkaamiseen. CSS:llä voi muuttaa tekstin kirjasintyyppiä, otsikon väriä, sivuston elementtien sijoittelua ja niin edelleen. 
+          </p>
+
+          <p>
+          Näiden lisäksi hyvin yleinen sivustojen kehittämisessä tarvittava työkalu on JavaScript-kieli, jota käytetään esimerkiksi vuorovaikutusta sivustolle tuovien toiminnallisuuksien luomiseen.
+          </p>
+
+          <p>
+          Monille lapsille oman verkkosivuston tekeminen on innostavaa ja helposti ymmärrettävää, koska visuaalista sivustoa luodessa sille tehdyt muutokset näkee heti ruudulla. Siksi verkkotyökalujenkin opettamisen voi aloittaa jo alakoulussa, jos vain aikaa ja intoa riittää. 
+          </p>
+
+          <em class="block-emphasize">
+          Oman verkkosivuston tekeminen on monille lapsille innostavaa.</em>
+          
+
+          <p>
+          HTML:ää, CSS:ää ja JavaScriptiä voi hyvin opetella vaikkapa pienoisverkkokursseilla. Näitä tarjoavat esimerkiksi Codecademy (<a href="http://www.codecademy.com/">codecademy.com</a>) ja Khan Academy (<a href="https://www.khanacademy.org/">khanacademy.org</a>).
+          </p>
+
+           <h3 id="section-9" class="fixed-header-hash-fix">Ohjelmointi ja muut oppiaineet</h3>
+
+          <p>
+          Uudessa opetussuunnitelman luonnoksessa ohjelmoinnin opetteluun otetaan aikaa lähtökohtaisesti matematiikan tuntijaosta. Samaan aikaan on ilmeistä, että koska ohjelmoinnilla on sovelluksia sekä tieteessä, taiteessa että esimerkiksi urheilussa, niin sitä voi myös sivuta lähes kaikissa kuviteltavissa olevissa oppiaineissa.
+          </p>
+
+          <p>
+          Alla on muutama satunnaisesti valittuihin oppiaineisiin liittyvä esimerkki, jotka toivottavasti herättävät ajatuksia siitä, miten ohjelmointiin ja ohjelmien kehittämiseen liittyviä asioita voidaan ottaa esille innostavalla, arkielämän konkretiaa painottavalla tavalla. 
+          </p>
+
+          <h4>Yhteiskuntaoppi</h4>
+
+          <lu>
+
+          <li>Yläkoulun yhteiskuntaopissa voidaan perehtyä erilaisiin yhteiskunnallisesti merkittäviin asioihin verkosta löytyvien informaation visualisointien avulla. Esimerkiksi Apps4Finland-kisassa palkitut työt ovat hyvä alku: apps4finland.fi/voittajat-2013. Vaikka oppilaat eivät koodaisi itse, he näkevät konkreettisesti, miten ohjelmointitaitoja ja avointa dataa eli julkisesti saatavilla olevia tietovarantoja yhdistelemällä voi esittää kiinnostavia asioita maailmasta.</li>
+
+          <li>Yhteiskuntaopissa voisi harkita opetussuunnitelman puitteissa teettää koe-esseitä myös tieto- ja viestintätekniikkaan sekä ohjelmointiin liittyvistä asioista:
+
+          <ul>
+
+          <li>Miten ihmisen rooli työelämässä on muuttunut, kun tietokoneista on tullut yhä ”älykkäämpiä”? </li>
+          <li>Miten internet syntyi? Keitä ihmisiä ja tahoja kehitykseen liittyi?</li>
+          <li>Miten ensimmäiset tietokoneet syntyivät ja kuka niitä käytti? </li>
+          <li>Miten ilmainen tietosanakirja Wikipedia tai verkon musiikin ja elokuvien laittomat latauspalvelut ovat muuttaneet ihmisten elämää?</li>
+          </ul>
+          </lu>
+
+          <h4>Matematiikka</h4>
+
+          <lu>
+          <li>Matematiikkaa voisi – uudessa maailmanjärjestyksessä – opiskella tietokoneiden ja ohjelmointitaitojen avulla aivan nykyisestä poikkeavalla tavalla. Siinä keskityttäisiin varsinaisen laskemisen sijasta ongelman ymmärtämiseen ja muotoiluun – ja laskutoimitusosan ratkaisemiseen käytettäisiin tietokonetta. Kun tietokone hoitaa laskut, itse ongelmat voisivat olla laskutoimituksellisesti huomattavasti vaikeampia, ja tämän ansiosta niillä voisi olla yhä useammin selvä, ymmärrettävä ja motivoiva yhteys tosielämään, esimerkiksi biologiaan, maantietoon tai fyysisen maailman ilmiöihin. 
+
+          <ul>
+          <li>Matemaatikko <stong>Conrad Wolfram</strong> on pitänyt aiheesta loistavan, huikealla tavalla silmiä avaavan puheen: <a href="https://www.youtube.com/watch?v=60OVlfAUPJg">youtube.com/watch?v=60OVlfAUPJg</a></li>
+          <li>Wolframin ja kumppaneiden ehdotukset uudenlaiselle, tietokonepohjaiselle matematiikan opetussuunnitelmalla löytyvät osoitteesta <a href="http://computerbasedmath.org/">computerbasedmath.org</a></li>
+          </ul>
+          </lu>
+
+          <h4>Liikunta</h4>
+
+          <lu>
+          <li>Esimerkiksi alakoulun liikuntatunnilla voidaan leikkiä mitä tahansa yksikäsitteisten ohjeiden antamista vaativaa leikkiä. Tällainen voisi olla vaikkapa esterataleikki, jossa urheilukentälle kootaan renkaista ja tötsistä koostuva reitti. Oppilaiden on ohjeistettava tarkoin komennoin toisensa liikkumaan sen läpi sokkona, ja nopeimman parin aika voittaa.</li>
+          <li>Erilaisia leikkejä on esitetty esimerkiksi CS Unplugged -sivustolla (<a href="http://csunplugged.org/">csunplugged.org</a>).</li>
+          </lu>
+
+          <h4>Kuvataide</h4>
+
+          <lu>
+          <li>Kuvataiteessa voidaan kokeilla suunnitella käyttöliittymä omalle mobiilisovellukselle tai piirtää luonnoksia omiksi kotisivuiksi.</li>
+
+          <li>Toinen kuvataiteen tunnilla mahdollinen harjoitus on pyytää oppilasta antamaan toiselle oppilaalle ohjeita tietynlaisen kuvan piirtämiseksi. CS Unplugged -sivustolla on esimerkiksi harjoitus, jossa oppilaan tulee saada toinen oppilas piirtämään suorakaiteen ja rastin sekä oppilaan oman nimen sisältämä kuvio antamalla vain tarkkoja suullisia ohjeita ja näkemättä, mitä toinen piirtää. Toinen ei myöskään saa esittää kysymyksiä.
+
+          <ul>
+
+          <li>Tämä ja muita harjoituksia löytyy osoitteesta: <a href="http://csunplugged.org/sites/default/files/activity_pdfs_full/unplugged-12-programming_languages.pdf">csunplugged.org/sites/default/files/activity_pdfs_full/unplugged-12-programming_languages.pdf</a></li>
+          </ul>
+
+          </li>
+          <li>Yläkouluikäiset voivat opettaa tietokoneen luomaan taideteoksia Processing-ohjelmointiympäristön avulla: < a href"http://openprocessing.org/classroom/855">openprocessing.org/classroom/855</a></li>
+
+          <h4>Musiikki</h4>
+          <lu>
+          <li>Musiikkitunnilla voidaan perehtyä musiikin tekemiseen tietokoneella – tai ihmetellä esimerkiksi EMI-nimisen tietokoneohjelmiston säveltämiä <strong>Frédéric Chopinia</strong> <a href="http://artsites.ucsc.edu/faculty/cope/mp3page.htm">matkivia masurkoita</a></li>
+          </lu>
+
+          <h4>Käsityö</h4>
+
+          <lu>
+          <li>Käsityötunnilla voidaan puhua siitä, <a href="http://www.codecademy.com/blog/70-how-knitters-are-human-computers">millä tavoin neulominen on itse asiassa algoritmista toimintaa</a>, joka on suhteellisen helppoa opettaa myös tietokoneelle. 
+            </li>
+          </lu>
+
+          <h4>Vieraat kielet</h4>
+          <lu>
+          <li>Vieraissa kielissä voidaan pohtia esimerkiksi sitä, mitä tietokoneelle pitäisi sanoa, jotta se oppisi muodostamaan ruotsin tai ranskan säännöllisen verbin perusmuodosta eri persoonamuotoja. (Vinkki: koneen on opittava lisäämään perusmuotoon sopivia päätteitä.)</li>
+          </lu>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer id="main-footer">
+    <div id="footer-upper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Oppaasta</h3>
+          
+            <p>
+            Koodi2016-hankkeen takana ovat ohjelmoinnin opetukseen perehtynyt lastenkirjailija <a href = http://www.twitter.com/lindaliukas>Linda Liukas</a> sekä vapaa toimittaja ja luovan alan yrittäjä <a href = http://www.juhanimykkanen.com>Juhani Mykkänen</a>. Hanketta tukevat <a href = http://www.lvm.fi>Liikenne- ja viestintäministeriö</a>, <a href = http://www.ohjelmistoyrittajat.fi>Ohjelmistoyrittäjät ry</a>, <a href = http://www.sitra.fi>Sitra</a>, <a href = http://www.tek.fi>Tekniikan akateemiset TEK</a>, <a href = http://www.teknologiateollisuus.fi>Teknologiateollisuus ry</a>, <a href = http://www.startup-saatio.fi>Startup-säätiö</a>, <a href = http://www.diacor.fi>Diacor</a>, <a href = http://www.eficode.fi>Eficode</a>, <a href = http://www.futurice.com>Futurice</a>, <a href = http://www.reaktor.fi>Reaktor</a>, <a href = http://www.rovio.com>Rovio</a> ja <a href = http://www.supercell.net>Supercell</a>. Oppaan sisältöä saa jakaa ja monistaa vapaasti, kunhan lähde ja osoite Koodi2016.fi mainitaan.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h3>
+              Jätä sähköpostiosoitteesi
+            </h3>
+            <p>
+              Jos haluat kuulla syksyn aikana lisää ohjelmoinnin opettamisesta Suomessa.
+              </p><p><a href="http://eepurl.com/S358r" class="btn pdf-download">Haluan kuulla lisää</a></p>
+              
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-lower">
+      <p class="container">
+        © 2014 Juhani Mykkänen ja Linda Liukas
+      </p>
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/imakewebthings-jquery-waypoints-415eb55/waypoints.min.js" type="text/javascript"></script>
+  <script src="js/imakewebthings-jquery-waypoints-415eb55/shortcuts/sticky-elements/waypoints-sticky.min.js" type="text/javascript"></script>
+  <script src="bootstrap-base/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    // TODO: Make the sticky index stop when the user scrolls to the bottom of the page so that it doesn't cover the footer.
+    $(".workpage-index").waypoint("sticky", {offset: 60});
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-51679454-1', 'koodi2016.fi');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+</body>
+</html>

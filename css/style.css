@@ -1,0 +1,310 @@
+/* Bootstrap overrides */
+
+a, a:hover, a:visited{
+  color: #d74c76;
+}
+
+
+small {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.page-header {
+  border: none;
+}
+
+
+
+
+#main-nav {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  z-index: 2000;
+}
+
+#main-nav .container {
+  height: 100%;
+}
+
+#main-nav .header-logo {
+  display: block;
+  height: 75%;
+  margin: auto;
+}
+
+#main-nav .header-logo a {
+  text-align: center;
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+
+#main-nav .header-logo a img {
+  width: 100px;
+  vertical-align: middle;
+  height: auto;
+}
+
+#main-nav .nav-pills {
+  padding: 0;
+}
+
+#main-nav .nav-pills {
+  height: 100%;
+}
+
+#main-nav .nav-pills a {
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#main-nav .nav-pills a.active {
+  color: #c41455;
+}
+
+#main-nav .nav-download {
+  height: 100%;
+  text-align: center;
+}
+
+#main-nav .nav-download .glyphicon {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.pdf-download, .pdf-download:hover, .pdf-download:focus, .pdf-download:visited {
+  color: #fff;
+  background-color: #c41455;
+  border-color: #b0124c;
+  font-weight: bold;
+  font-color:white;
+}
+
+.pdf-download:hover {
+  background-color: #b91350;
+}
+
+
+
+#main-content {
+  display: block;
+  margin-top: 60px;
+}
+
+
+button.btn:active, button.btn:focus, button.btn:active:focus {
+  outline: none;
+}
+
+
+footer {
+  font-size: 10px;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer h3 {
+  color: #fff;
+}
+
+footer .form-group {
+  white-space: nowrap;
+  width: 100%;
+}
+
+footer .form-group .form-control {
+  display: inline-block;
+  background-color: #3c3c3c;
+  max-width: 80%;
+  color: #ffffff;
+}
+
+footer .form-group button {
+  margin-left: -6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 10%;
+  min-width: 50px;
+}
+
+#footer-upper {
+  padding: 30px 0;
+
+  background-color: #3c3c3c;
+}
+
+#footer-upper h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+#footer-lower {
+  padding: 30px 0;
+
+  background-color: #303030;
+}
+
+
+.workpage-header-wrapper {
+  height: 250px;
+
+  background-color: #45a4df;
+  color: #ffffff;
+}
+
+.workpage-header-wrapper .page-header {
+  margin-top: 85px;
+}
+
+.workpage-header-wrapper .page-header small {
+  color: #5ec7ff
+}
+
+/* Overriding Bootstrap */
+.page-header {
+  border: none;
+}
+
+.workpage-index:not(.stuck) .container {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.workpage-index:not(.stuck) .row {
+  margin: 0;
+}
+
+.workpage-index:not(.stuck) .col-sm-3 {
+  width: auto;
+  padding: 0;
+}
+
+.workpage-index ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.workpage-index h5 {
+  font-weight: bold;
+}
+
+.workpage-index a {
+  color: #8cbfd0;
+}
+
+.no-gutter {
+  padding: 0;
+}
+
+
+.block-emphasize {
+  display: block;
+
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #d74c76;
+  line-height: 24px;
+
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.collapse-toggle {
+  color: #50bfff;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.indent {
+  margin-left: 14px;
+}
+
+@media (max-width: 767px) {
+  #main-nav {
+    position: static;
+    height: auto;
+  }
+
+  #main-nav .nav-pills li {
+    display: block;
+    float: none;
+  }
+
+  #main-nav .nav-pills a {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  #main-nav .nav-pills a.active {
+    border: 2px solid #c41455;
+  }
+
+  #main-nav .glyphicon {
+    display: none;
+  }
+
+  #main-nav .pdf-download {
+    width: 100%;
+  }
+
+  #main-content {
+    margin-top: 0;
+  }
+
+  #main-nav .header-logo a img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-nav .header-logo a img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .workpage-index.stuck {
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+  }
+
+  #main-nav .nav-pills a.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #c41455;
+  }
+
+  .fixed-header-hash-fix:before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+  }
+}
